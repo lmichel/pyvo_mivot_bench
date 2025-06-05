@@ -1,1 +1,1 @@
-# Test bench for the VOTable annatation workflow
+# Test bench for the VOTable annotation workflow
