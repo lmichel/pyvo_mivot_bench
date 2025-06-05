@@ -1,0 +1,3120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VOTABLE version="1.3" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="OK"/>
+<INFO name="PROVIDER" value="CDS">TAPVizieR</INFO>
+<INFO name="QUERY" value='SELECT TOP 100 *
+FROM "J/ApJS/112/557/table1","III/170B/ps_class"
+WHERE "J/ApJS/112/557/table1".IRAS="III/170B/ps_class".IRAS'/>
+<INFO name='ivoid_service' value='ivo://CDS.VizieR/TAP'>IVOID of the service that produced the Votable</INFO>
+<INFO name='publisher' value='ivo://CDS'>Data centre that produced the VOTable</INFO>
+<INFO name='server_software' value='TAPVizieR-Vollt/1.1.3'>Software version</INFO>
+<INFO name='service_protocol' value='ivo://ivoa.net/std/TAP/v1.1'>IVOID of the protocol through which the data was retrieved</INFO>
+<INFO name='request_date' value='2025-06-02 22:19:56'>Query execution date</INFO>
+<INFO name='contact' value='cds-question@unistra.fr'>Email or URL to contact publisher</INFO>
+<INFO name='ivoid' value='ivo://CDS.VizieR/J/ApJS/112/557'>IVOID of underlying data collection (J/ApJS/112/557/table1)</INFO>
+<INFO name='reference_url' value='https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJS/112/557'>Dataset landing page	 (J/ApJS/112/557/table1)</INFO>
+<INFO name='rights_uri' value='https://cds.unistra.fr/vizier-org/licences_vizier.html'>Licence URI  (J/ApJS/112/557/table1)</INFO>
+<INFO name='creator' value='Kwok S.'>The person(s) mainly involved in the creation of the resource; generally, the author(s) (J/ApJS/112/557/table1)</INFO>
+<INFO name='article' value='1997ApJS..112..557K'>Bibcode or DOI of a reference article	 (J/ApJS/112/557/table1)</INFO>
+<INFO name='publication_date' value='2013-01-09 19:36:52+01'>Date of first publication in the data centre (J/ApJS/112/557/table1)</INFO>
+<INFO name='product_type' value='Critical Comp.'>VizieR catalogue type (J/ApJS/112/557/table1)</INFO>
+<INFO name='ivoid' value='ivo://CDS.VizieR/III/170B'>IVOID of underlying data collection (III/170B/ps_class)</INFO>
+qq<INFO name='reference_url' value='https://cdsarc.cds.unistra.fr/viz-bin/cat/III/170B'>Dataset landing page	 (III/170B/ps_class)</INFO>
+<INFO name='rights_uri' value='https://cds.unistra.fr/vizier-org/licences_vizier.html'>Licence URI  (III/170B/ps_class)</INFO>
+<INFO name='creator' value='MacConnell D. J.'>The person(s) mainly involved in the creation of the resource; generally, the author(s) (III/170B/ps_class)</INFO>
+<INFO name='article' value='1993yCat.3170.....M'>Bibcode or DOI of a reference article	 (III/170B/ps_class)</INFO>
+<INFO name='publication_date' value='2009-08-06 12:34:37+02'>Date of first publication in the data centre (III/170B/ps_class)</INFO>
+<INFO name='product_type' value='Observation'>VizieR catalogue type (III/170B/ps_class)</INFO>
+<COOSYS ID="coosys_c21120557t1" system="FK5" equinox="2000.0" />
+<COOSYS ID="coosys_c3170ps_class" system="FK5" equinox="2000.0" />
+<TABLE name="result_1748895596030">
+<FIELD datatype="int" name="recno" ucd="meta.record">
+<DESCRIPTION>Record number assigned by the VizieR team. Should Not be used for identification.</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="IRAS" ucd="meta.id;meta.main">
+<DESCRIPTION>*IRAS Source name (Cat. II/125)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="int" name="SAO" ucd="meta.id.cross">
+<DESCRIPTION>? SAO designation (Cat. I/131)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="HD_BD" ucd="meta.id.cross">
+<DESCRIPTION>HD or BD designation</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="GCVS" ucd="meta.id.cross">
+<DESCRIPTION>GCVS designation (Cat. B/gcvs)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="IRC" ucd="meta.id.cross">
+<DESCRIPTION>IRC designation (Cat. II/2)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="AFGL" ucd="meta.id.cross">
+<DESCRIPTION>AFGL designation (Cat. II/94)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Other" ucd="meta.id.cross">
+<DESCRIPTION>Other designation</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Sp" ucd="src.spType">
+<DESCRIPTION>Optical MK spectral type</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="LRS" ucd="meta.ref;pos.frame">
+<DESCRIPTION>LRS classification (see Cat. III/197, Note 1)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="int" name="S12" ucd="phot.flux.density;em.IR.8-15um" unit="Jy">
+<DESCRIPTION>12um IRAS flux</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="C12-25" ucd="phot.color;em.IR.8-15um;em.IR.15-30um">
+<DESCRIPTION>12um-25um color</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="p12" ucd="meta.code.class">
+<DESCRIPTION>[x] 12um Peaker</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="_RA" ref="coosys_c21120557t1" ucd="pos.eq.ra;meta.main" unit="deg">
+<DESCRIPTION>Simbad column added by the CDS</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="_DE" ref="coosys_c21120557t1" ucd="pos.eq.dec;meta.main" unit="deg">
+<DESCRIPTION>Simbad column added by the CDS</DESCRIPTION>
+</FIELD>
+<FIELD datatype="int" name="recno" ucd="meta.record">
+<DESCRIPTION>Record number assigned by the VizieR team. Should Not be used for identification.</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="n_IRAS" ucd="meta.ref.url"/>
+<FIELD arraysize="*" datatype="char" name="IRAS" ucd="meta.id;meta.main">
+<DESCRIPTION>IRAS-PSC Name (Cat. II/125)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Class" ucd="meta.code.class;src.class">
+<DESCRIPTION>Classification of the star and comments (&amp;lt;M means &amp;quot;M2 or earlier&amp;quot;)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Off" ucd="pos;arith.diff" unit="arcsec">
+<DESCRIPTION>? Offset from IRAS position</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Dir" ucd="pos.posAng">
+<DESCRIPTION>[NSEW ] Direction of offset from IRAS position</DESCRIPTION>
+</FIELD>
+<FIELD datatype="int" name="Plate" ucd="meta.id;instr.plate">
+<DESCRIPTION>Plate number</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="n_Plate" ucd="meta.note">
+<DESCRIPTION>[lms] Note on Exposure/Plate (1)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="den" ucd="instr.param">
+<DESCRIPTION>[0,20]? Density on a scale of 0 to 20</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="u_den" ucd="meta.code.error">
+<DESCRIPTION>[:?v] Uncertainty flag (:) on den</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Remarks" ucd="meta.note">
+<DESCRIPTION>Cross-identifications and remarks (2)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="_RA" ref="coosys_c3170ps_class" ucd="pos.eq.ra;meta.main" unit="deg">
+<DESCRIPTION>Position from IRAS Point Source Catalog (Cat. II/125) (right ascension part)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="_DE" ref="coosys_c3170ps_class" ucd="pos.eq.dec;meta.main" unit="deg">
+<DESCRIPTION>Position from IRAS Point Source Catalog (Cat. II/125) (declination part)</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>1679</TD>
+    <TD>07043-2300 </TD>
+    <TD>172965</TD>
+    <TD>      54027 </TD>
+    <TD> </TD>
+    <TD>-20120 </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M4/5 III</TD>
+    <TD>S</TD>
+    <TD>11</TD>
+    <TD>0.14</TD>
+    <TD> </TD>
+    <TD>106.6069</TD>
+    <TD>-23.0903</TD>
+    <TD>1240</TD>
+    <TD>M</TD>
+    <TD>07043-2300 </TD>
+    <TD>M4</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29146</TD>
+    <TD>l</TD>
+    <TD>15</TD>
+    <TD> </TD>
+    <TD>SAO 172965</TD>
+    <TD>106.60692</TD>
+    <TD>-23.09027</TD>
+  </TR>
+  <TR>
+    <TD>1738</TD>
+    <TD>07132-2155 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>BP CMa</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M10</TD>
+    <TD>F</TD>
+    <TD>12</TD>
+    <TD>0.68</TD>
+    <TD> </TD>
+    <TD>108.8379</TD>
+    <TD>-22.0139</TD>
+    <TD>1503</TD>
+    <TD>M</TD>
+    <TD>07132-2155 </TD>
+    <TD>M10</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29146</TD>
+    <TD>l</TD>
+    <TD>8</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>108.837889</TD>
+    <TD>-22.013927</TD>
+  </TR>
+  <TR>
+    <TD>1670</TD>
+    <TD>07036-2220 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>C</TD>
+    <TD>19</TD>
+    <TD>0.99</TD>
+    <TD> </TD>
+    <TD>106.4355</TD>
+    <TD>-22.4192</TD>
+    <TD>1220</TD>
+    <TD>M</TD>
+    <TD>07036-2220 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29146</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.435498</TD>
+    <TD>-22.419184</TD>
+  </TR>
+  <TR>
+    <TD>1782</TD>
+    <TD>07202-2024 </TD>
+    <TD>173565</TD>
+    <TD>      57890 </TD>
+    <TD>GH CMa</TD>
+    <TD>-20129 </TD>
+    <TD>       1108 </TD>
+    <TD> </TD>
+    <TD>M5 III</TD>
+    <TD>S</TD>
+    <TD>23</TD>
+    <TD>0.13</TD>
+    <TD> </TD>
+    <TD>110.5961</TD>
+    <TD>-20.507</TD>
+    <TD>1724</TD>
+    <TD>M</TD>
+    <TD>07202-2024 </TD>
+    <TD>M7</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10862</TD>
+    <TD>l</TD>
+    <TD>5</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>110.596123</TD>
+    <TD>-20.506961</TD>
+  </TR>
+  <TR>
+    <TD>1801</TD>
+    <TD>07222-2005 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M9:</TD>
+    <TD>E</TD>
+    <TD>25</TD>
+    <TD>0.85</TD>
+    <TD> </TD>
+    <TD>111.1014</TD>
+    <TD>-20.1987</TD>
+    <TD>1798</TD>
+    <TD>M</TD>
+    <TD>07222-2005 </TD>
+    <TD>M9:</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10862</TD>
+    <TD>l</TD>
+    <TD>2</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>111.101376</TD>
+    <TD>-20.198699</TD>
+  </TR>
+  <TR>
+    <TD>1795</TD>
+    <TD>07215-1948 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>XX CMa</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M5</TD>
+    <TD>F</TD>
+    <TD>9</TD>
+    <TD>0.64</TD>
+    <TD> </TD>
+    <TD>110.9411</TD>
+    <TD>-19.9049</TD>
+    <TD>1769</TD>
+    <TD>M</TD>
+    <TD>07215-1948 </TD>
+    <TD>M5</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10862</TD>
+    <TD>l</TD>
+    <TD>10</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>110.941118</TD>
+    <TD>-19.904912</TD>
+  </TR>
+  <TR>
+    <TD>1813</TD>
+    <TD>07240-1939 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1715</TD>
+    <TD>C5,4</TD>
+    <TD>S</TD>
+    <TD>9</TD>
+    <TD>0.15</TD>
+    <TD> </TD>
+    <TD>111.5689</TD>
+    <TD>-19.758</TD>
+    <TD>1866</TD>
+    <TD>M</TD>
+    <TD>07240-1939 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10862</TD>
+    <TD>l</TD>
+    <TD>10</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>111.568937</TD>
+    <TD>-19.758036</TD>
+  </TR>
+  <TR>
+    <TD>1829</TD>
+    <TD>07270-1921 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>3610</TD>
+    <TD>-20131 </TD>
+    <TD>       1131 </TD>
+    <TD>CS 1732</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>91</TD>
+    <TD>0.35</TD>
+    <TD> </TD>
+    <TD>112.3047</TD>
+    <TD>-19.4639</TD>
+    <TD>1943</TD>
+    <TD>M</TD>
+    <TD>07270-1921 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10862</TD>
+    <TD>l</TD>
+    <TD>6</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>112.30466</TD>
+    <TD>-19.463854</TD>
+  </TR>
+  <TR>
+    <TD>1781</TD>
+    <TD>07200-1846 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>(CO),(OH)</TD>
+    <TD>E</TD>
+    <TD>22</TD>
+    <TD>1.21</TD>
+    <TD> </TD>
+    <TD>110.5666</TD>
+    <TD>-18.8707</TD>
+    <TD>1720</TD>
+    <TD>M</TD>
+    <TD>07200-1846 </TD>
+    <TD>ft. cont.; diffuse</TD>
+    <TD>38.0</TD>
+    <TD>S </TD>
+    <TD>10862</TD>
+    <TD>l</TD>
+    <TD>1</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>110.566593</TD>
+    <TD>-18.870696</TD>
+  </TR>
+  <TR>
+    <TD>1717</TD>
+    <TD>07098-2012 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>HX CMa</TD>
+    <TD>       </TD>
+    <TD>       1085 </TD>
+    <TD>CS 1601</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>227</TD>
+    <TD>0.71</TD>
+    <TD> </TD>
+    <TD>108.0165</TD>
+    <TD>-20.2896</TD>
+    <TD>1396</TD>
+    <TD>M</TD>
+    <TD>07098-2012 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29146</TD>
+    <TD>l</TD>
+    <TD>4</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>108.016545</TD>
+    <TD>-20.289559</TD>
+  </TR>
+  <TR>
+    <TD>1728</TD>
+    <TD>07116-1936 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>BO CMa</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1612</TD>
+    <TD>C5,4</TD>
+    <TD>C</TD>
+    <TD>9</TD>
+    <TD>0.39</TD>
+    <TD> </TD>
+    <TD>108.4533</TD>
+    <TD>-19.6899</TD>
+    <TD>1450</TD>
+    <TD>M</TD>
+    <TD>07116-1936 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29146</TD>
+    <TD>l</TD>
+    <TD>10</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>108.453257</TD>
+    <TD>-19.689903</TD>
+  </TR>
+  <TR>
+    <TD>1699</TD>
+    <TD>07073-1944 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>&lt;M</TD>
+    <TD>F</TD>
+    <TD>22</TD>
+    <TD>1.04</TD>
+    <TD> </TD>
+    <TD>107.3861</TD>
+    <TD>-19.8277</TD>
+    <TD>1324</TD>
+    <TD>M</TD>
+    <TD>07073-1944 </TD>
+    <TD>very faint cont.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29146</TD>
+    <TD>l</TD>
+    <TD>1</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>107.386127</TD>
+    <TD>-19.827742</TD>
+  </TR>
+  <TR>
+    <TD>1756</TD>
+    <TD>07158-1831 </TD>
+    <TD></TD>
+    <TD>   -18 1772 </TD>
+    <TD>CS CMa</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M4</TD>
+    <TD>E</TD>
+    <TD>9</TD>
+    <TD>0.91</TD>
+    <TD> </TD>
+    <TD>109.5189</TD>
+    <TD>-18.6234</TD>
+    <TD>1580</TD>
+    <TD>M</TD>
+    <TD>07158-1831 </TD>
+    <TD>M5</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29143</TD>
+    <TD>l</TD>
+    <TD>9</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>109.518924</TD>
+    <TD>-18.623404</TD>
+  </TR>
+  <TR>
+    <TD>1759</TD>
+    <TD>07161-1709 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>DU CMa</TD>
+    <TD>-20127 </TD>
+    <TD>      4582S </TD>
+    <TD> </TD>
+    <TD>M6.5</TD>
+    <TD>U</TD>
+    <TD>8</TD>
+    <TD>0.53</TD>
+    <TD> </TD>
+    <TD>109.605</TD>
+    <TD>-17.2585</TD>
+    <TD>1590</TD>
+    <TD>M</TD>
+    <TD>07161-1709 </TD>
+    <TD>M7</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10852</TD>
+    <TD>l</TD>
+    <TD>15</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>109.605048</TD>
+    <TD>-17.258505</TD>
+  </TR>
+  <TR>
+    <TD>1661</TD>
+    <TD>07019-1631 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>Y CMa</TD>
+    <TD>-20117 </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M8:e</TD>
+    <TD>E</TD>
+    <TD>21</TD>
+    <TD>0.9</TD>
+    <TD> </TD>
+    <TD>106.0526</TD>
+    <TD>-16.5929</TD>
+    <TD>1163</TD>
+    <TD>M</TD>
+    <TD>07019-1631 </TD>
+    <TD>M8</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29143</TD>
+    <TD>l</TD>
+    <TD>6</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.052625</TD>
+    <TD>-16.592879</TD>
+  </TR>
+  <TR>
+    <TD>1688</TD>
+    <TD>07055-1548 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>I</TD>
+    <TD>7</TD>
+    <TD>0.65</TD>
+    <TD> </TD>
+    <TD>106.9578</TD>
+    <TD>-15.8818</TD>
+    <TD>1272</TD>
+    <TD>M</TD>
+    <TD>07055-1548 </TD>
+    <TD>very faint cont.; redd.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29143</TD>
+    <TD>l</TD>
+    <TD>1</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.95784</TD>
+    <TD>-15.881815</TD>
+  </TR>
+  <TR>
+    <TD>1705</TD>
+    <TD>07080-1610 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>3439</TD>
+    <TD>-20122 </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M7</TD>
+    <TD>E</TD>
+    <TD>30</TD>
+    <TD>0.81</TD>
+    <TD> </TD>
+    <TD>107.5695</TD>
+    <TD>-16.2636</TD>
+    <TD>1350</TD>
+    <TD>M</TD>
+    <TD>07080-1610 </TD>
+    <TD>M6</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29143</TD>
+    <TD>l</TD>
+    <TD>12</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>107.56951</TD>
+    <TD>-16.26355</TD>
+  </TR>
+  <TR>
+    <TD>1665</TD>
+    <TD>07028-1456 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>HV CMa</TD>
+    <TD>       </TD>
+    <TD>       1062 </TD>
+    <TD>CS 1540</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>47</TD>
+    <TD>0.34</TD>
+    <TD> </TD>
+    <TD>106.2744</TD>
+    <TD>-15.0158</TD>
+    <TD>1189</TD>
+    <TD>M</TD>
+    <TD>07028-1456 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8163</TD>
+    <TD>m</TD>
+    <TD>4</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.274418</TD>
+    <TD>-15.015841</TD>
+  </TR>
+  <TR>
+    <TD>1641</TD>
+    <TD>06582-1512 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M10</TD>
+    <TD>E</TD>
+    <TD>21</TD>
+    <TD>0.96</TD>
+    <TD> </TD>
+    <TD>105.1243</TD>
+    <TD>-15.2857</TD>
+    <TD>1050</TD>
+    <TD>M</TD>
+    <TD>06582-1512 </TD>
+    <TD>M10</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29823</TD>
+    <TD>m</TD>
+    <TD>5</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>105.124314</TD>
+    <TD>-15.285736</TD>
+  </TR>
+  <TR>
+    <TD>1643</TD>
+    <TD>06583-1416 </TD>
+    <TD></TD>
+    <TD>   -14 1681 </TD>
+    <TD>RV CMa</TD>
+    <TD>-10144 </TD>
+    <TD>      4547S </TD>
+    <TD> </TD>
+    <TD>gM6</TD>
+    <TD>S</TD>
+    <TD>8</TD>
+    <TD>0.44</TD>
+    <TD> </TD>
+    <TD>105.1686</TD>
+    <TD>-14.3495</TD>
+    <TD>1054</TD>
+    <TD>M</TD>
+    <TD>06583-1416 </TD>
+    <TD>M6</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29823</TD>
+    <TD>m</TD>
+    <TD>13</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>105.168614</TD>
+    <TD>-14.349544</TD>
+  </TR>
+  <TR>
+    <TD>1614</TD>
+    <TD>06528-1405 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>GR CMa</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M7</TD>
+    <TD>E</TD>
+    <TD>10</TD>
+    <TD>0.85</TD>
+    <TD> </TD>
+    <TD>103.7779</TD>
+    <TD>-14.1588</TD>
+    <TD>910</TD>
+    <TD>M</TD>
+    <TD>06528-1405 </TD>
+    <TD>M7</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29823</TD>
+    <TD>m</TD>
+    <TD>13</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>103.777884</TD>
+    <TD>-14.158825</TD>
+  </TR>
+  <TR>
+    <TD>1599</TD>
+    <TD>06504-1206 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>GP CMa</TD>
+    <TD>       </TD>
+    <TD>      4538S </TD>
+    <TD>CS 1450, AS 137</TD>
+    <TD>Ce</TD>
+    <TD>C</TD>
+    <TD>55</TD>
+    <TD>0.27</TD>
+    <TD> </TD>
+    <TD>103.1927</TD>
+    <TD>-12.1655</TD>
+    <TD>842</TD>
+    <TD>M</TD>
+    <TD>06504-1206 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8161</TD>
+    <TD>m</TD>
+    <TD>6</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>103.192668</TD>
+    <TD>-12.165478</TD>
+  </TR>
+  <TR>
+    <TD>1831</TD>
+    <TD>07273-1728 </TD>
+    <TD>152953</TD>
+    <TD>      59494 </TD>
+    <TD>3615</TD>
+    <TD>-20132 </TD>
+    <TD>      4605S </TD>
+    <TD> </TD>
+    <TD>M4 III</TD>
+    <TD>S</TD>
+    <TD>10</TD>
+    <TD>0.11</TD>
+    <TD> </TD>
+    <TD>112.3954</TD>
+    <TD>-17.574</TD>
+    <TD>1953</TD>
+    <TD>M</TD>
+    <TD>07273-1728 </TD>
+    <TD>M6</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10852</TD>
+    <TD>l</TD>
+    <TD>14</TD>
+    <TD> </TD>
+    <TD>SAO 152953</TD>
+    <TD>112.395423</TD>
+    <TD>-17.573962</TD>
+  </TR>
+  <TR>
+    <TD>1850</TD>
+    <TD>07315-1523 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1772</TD>
+    <TD>C</TD>
+    <TD>S</TD>
+    <TD>12</TD>
+    <TD>0.22</TD>
+    <TD> </TD>
+    <TD>113.4666</TD>
+    <TD>-15.4937</TD>
+    <TD>2082</TD>
+    <TD>M</TD>
+    <TD>07315-1523 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29847</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>113.466588</TD>
+    <TD>-15.493741</TD>
+  </TR>
+  <TR>
+    <TD>1912</TD>
+    <TD>07426-1534 </TD>
+    <TD></TD>
+    <TD>      62745 </TD>
+    <TD>3717</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M3 Iab/Ib</TD>
+    <TD>E</TD>
+    <TD>19</TD>
+    <TD>1.21</TD>
+    <TD> </TD>
+    <TD>116.2372</TD>
+    <TD>-15.6974</TD>
+    <TD>2430</TD>
+    <TD>M</TD>
+    <TD>07426-1534 </TD>
+    <TD>early M; redd.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26617</TD>
+    <TD>l</TD>
+    <TD>13</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>116.237204</TD>
+    <TD>-15.697371</TD>
+  </TR>
+  <TR>
+    <TD>1875</TD>
+    <TD>07374-1418 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>P</TD>
+    <TD>13</TD>
+    <TD>0.65</TD>
+    <TD> </TD>
+    <TD>114.9441</TD>
+    <TD>-14.4275</TD>
+    <TD>2272</TD>
+    <TD>M</TD>
+    <TD>07374-1418 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29847</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>114.944114</TD>
+    <TD>-14.427512</TD>
+  </TR>
+  <TR>
+    <TD>1748</TD>
+    <TD>07146-1614 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>F</TD>
+    <TD>18</TD>
+    <TD>0.93</TD>
+    <TD> </TD>
+    <TD>109.2341</TD>
+    <TD>-16.329</TD>
+    <TD>1545</TD>
+    <TD>M</TD>
+    <TD>07146-1614 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10852</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>109.234101</TD>
+    <TD>-16.329014</TD>
+  </TR>
+  <TR>
+    <TD>1761</TD>
+    <TD>07165-1547 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>       1101 </TD>
+    <TD> </TD>
+    <TD>M6.5</TD>
+    <TD>I</TD>
+    <TD>7</TD>
+    <TD>0.7</TD>
+    <TD> </TD>
+    <TD>109.6969</TD>
+    <TD>-15.8884</TD>
+    <TD>1603</TD>
+    <TD>M</TD>
+    <TD>07165-1547 </TD>
+    <TD>M6</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10852</TD>
+    <TD>l</TD>
+    <TD>10</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>109.696925</TD>
+    <TD>-15.888354</TD>
+  </TR>
+  <TR>
+    <TD>1780</TD>
+    <TD>07197-1451 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>TT CMa</TD>
+    <TD>       </TD>
+    <TD>      4593S </TD>
+    <TD>SS 341</TD>
+    <TD>S:</TD>
+    <TD>E</TD>
+    <TD>19</TD>
+    <TD>0.89</TD>
+    <TD> </TD>
+    <TD>110.5078</TD>
+    <TD>-14.949</TD>
+    <TD>1707</TD>
+    <TD>M</TD>
+    <TD>07197-1451 </TD>
+    <TD>S star; TT CMa</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10852</TD>
+    <TD>l</TD>
+    <TD>8</TD>
+    <TD> </TD>
+    <TD>GCGSS2 341</TD>
+    <TD>110.507752</TD>
+    <TD>-14.948993</TD>
+  </TR>
+  <TR>
+    <TD>1745</TD>
+    <TD>07145-1428 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>(CO)</TD>
+    <TD>F</TD>
+    <TD>12</TD>
+    <TD>0.57</TD>
+    <TD> </TD>
+    <TD>109.2199</TD>
+    <TD>-14.5659</TD>
+    <TD>1541</TD>
+    <TD>M</TD>
+    <TD>07145-1428 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10852</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>109.219895</TD>
+    <TD>-14.565872</TD>
+  </TR>
+  <TR>
+    <TD>1741</TD>
+    <TD>07143-1355 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>I</TD>
+    <TD>10</TD>
+    <TD>0.91</TD>
+    <TD> </TD>
+    <TD>109.1601</TD>
+    <TD>-14.0156</TD>
+    <TD>1534</TD>
+    <TD>M</TD>
+    <TD>07143-1355 </TD>
+    <TD>M4:; redd.</TD>
+    <TD>48.0</TD>
+    <TD>SE</TD>
+    <TD>10851</TD>
+    <TD>l</TD>
+    <TD>4</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>109.160062</TD>
+    <TD>-14.015591</TD>
+  </TR>
+  <TR>
+    <TD>1797</TD>
+    <TD>07217-1246 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>       5230 </TD>
+    <TD>CS 1696</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>104</TD>
+    <TD>0.58</TD>
+    <TD> </TD>
+    <TD>111.0142</TD>
+    <TD>-12.8741</TD>
+    <TD>1777</TD>
+    <TD>M</TD>
+    <TD>07217-1246 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10851</TD>
+    <TD>l</TD>
+    <TD>3</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>111.014239</TD>
+    <TD>-12.874052</TD>
+  </TR>
+  <TR>
+    <TD>1931</TD>
+    <TD>07452-1149 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>GO Pup</TD>
+    <TD>-10177 </TD>
+    <TD>            </TD>
+    <TD>CS 1877</TD>
+    <TD>C</TD>
+    <TD>F</TD>
+    <TD>7</TD>
+    <TD>0.25</TD>
+    <TD> </TD>
+    <TD>116.9078</TD>
+    <TD>-11.9533</TD>
+    <TD>2510</TD>
+    <TD>M</TD>
+    <TD>07452-1149 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29847</TD>
+    <TD>l</TD>
+    <TD>10</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>116.907774</TD>
+    <TD>-11.953307</TD>
+  </TR>
+  <TR>
+    <TD>1938</TD>
+    <TD>07466-1054 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>V575 Mon</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M8:</TD>
+    <TD>E</TD>
+    <TD>9</TD>
+    <TD>0.65</TD>
+    <TD> </TD>
+    <TD>117.2475</TD>
+    <TD>-11.0412</TD>
+    <TD>2557</TD>
+    <TD>M</TD>
+    <TD>07466-1054 </TD>
+    <TD>M9</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29847</TD>
+    <TD>l</TD>
+    <TD>5</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>117.247462</TD>
+    <TD>-11.04116</TD>
+  </TR>
+  <TR>
+    <TD>1873</TD>
+    <TD>07372-1036 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M8</TD>
+    <TD>E</TD>
+    <TD>11</TD>
+    <TD>0.95</TD>
+    <TD> </TD>
+    <TD>114.9155</TD>
+    <TD>-10.7187</TD>
+    <TD>2262</TD>
+    <TD>M</TD>
+    <TD>07372-1036 </TD>
+    <TD>M9:</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8208</TD>
+    <TD>m</TD>
+    <TD>1</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>114.915457</TD>
+    <TD>-10.718735</TD>
+  </TR>
+  <TR>
+    <TD>1858</TD>
+    <TD>07336-1006 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>C</TD>
+    <TD>49</TD>
+    <TD>0.86</TD>
+    <TD> </TD>
+    <TD>114.0124</TD>
+    <TD>-10.2147</TD>
+    <TD>2151</TD>
+    <TD>M</TD>
+    <TD>07336-1006 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8208</TD>
+    <TD>m</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>114.012427</TD>
+    <TD>-10.214727</TD>
+  </TR>
+  <TR>
+    <TD>1867</TD>
+    <TD>07365-0859 </TD>
+    <TD></TD>
+    <TD>    -8 2014 </TD>
+    <TD> </TD>
+    <TD>-10173 </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M6</TD>
+    <TD>E</TD>
+    <TD>12</TD>
+    <TD>0.93</TD>
+    <TD> </TD>
+    <TD>114.7444</TD>
+    <TD>-9.1085</TD>
+    <TD>2238</TD>
+    <TD>M</TD>
+    <TD>07365-0859 </TD>
+    <TD>M6</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8208</TD>
+    <TD>m</TD>
+    <TD>10</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>114.744394</TD>
+    <TD>-9.108518</TD>
+  </TR>
+  <TR>
+    <TD>1684</TD>
+    <TD>07049-1153 </TD>
+    <TD>152411</TD>
+    <TD>   -11 1797 </TD>
+    <TD> </TD>
+    <TD>-10150 </TD>
+    <TD>      4565S </TD>
+    <TD> </TD>
+    <TD>M2 Iab</TD>
+    <TD>F</TD>
+    <TD>8</TD>
+    <TD>0.71</TD>
+    <TD> </TD>
+    <TD>106.8167</TD>
+    <TD>-11.9778</TD>
+    <TD>1255</TD>
+    <TD>M</TD>
+    <TD>07049-1153 </TD>
+    <TD>M3; redd.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10851</TD>
+    <TD>l</TD>
+    <TD>17</TD>
+    <TD> </TD>
+    <TD>SAO 152411</TD>
+    <TD>106.816668</TD>
+    <TD>-11.977779</TD>
+  </TR>
+  <TR>
+    <TD>1682</TD>
+    <TD>07045-1104 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>F</TD>
+    <TD>9</TD>
+    <TD>1.13</TD>
+    <TD> </TD>
+    <TD>106.7373</TD>
+    <TD>-11.1607</TD>
+    <TD>1244</TD>
+    <TD>M</TD>
+    <TD>07045-1104 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10851</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.737276</TD>
+    <TD>-11.160733</TD>
+  </TR>
+  <TR>
+    <TD>1687</TD>
+    <TD>07054-1039 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>-10151 </TD>
+    <TD>       1074 </TD>
+    <TD>223.59-1.3</TD>
+    <TD>M8</TD>
+    <TD>E</TD>
+    <TD>53</TD>
+    <TD>1.28</TD>
+    <TD> </TD>
+    <TD>106.9544</TD>
+    <TD>-10.7345</TD>
+    <TD>1268</TD>
+    <TD>M</TD>
+    <TD>07054-1039 </TD>
+    <TD>M8</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10851</TD>
+    <TD>l</TD>
+    <TD>8</TD>
+    <TD> </TD>
+    <TD>IRC -10151</TD>
+    <TD>106.954395</TD>
+    <TD>-10.734517</TD>
+  </TR>
+  <TR>
+    <TD>1758</TD>
+    <TD>07161-1106 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1645</TD>
+    <TD>C</TD>
+    <TD>F</TD>
+    <TD>7</TD>
+    <TD>0.35</TD>
+    <TD> </TD>
+    <TD>109.6284</TD>
+    <TD>-11.1941</TD>
+    <TD>1589</TD>
+    <TD>M</TD>
+    <TD>07161-1106 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10851</TD>
+    <TD>l</TD>
+    <TD>9</TD>
+    <TD> </TD>
+    <TD>not SAO</TD>
+    <TD>109.628414</TD>
+    <TD>-11.194098</TD>
+  </TR>
+  <TR>
+    <TD>1785</TD>
+    <TD>07204-1032 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1682</TD>
+    <TD>C4,5J</TD>
+    <TD>F</TD>
+    <TD>6</TD>
+    <TD>0.75</TD>
+    <TD> </TD>
+    <TD>110.696</TD>
+    <TD>-10.6437</TD>
+    <TD>1733</TD>
+    <TD>M</TD>
+    <TD>07204-1032 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10851</TD>
+    <TD>l</TD>
+    <TD>7</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>110.695955</TD>
+    <TD>-10.643691</TD>
+  </TR>
+  <TR>
+    <TD>1772</TD>
+    <TD>07186-1017 </TD>
+    <TD></TD>
+    <TD>   -10 2010 </TD>
+    <TD>V632 Mon</TD>
+    <TD>-10162 </TD>
+    <TD>            </TD>
+    <TD>OCL 0571</TD>
+    <TD>M7 III</TD>
+    <TD>E</TD>
+    <TD>24</TD>
+    <TD>0.88</TD>
+    <TD> </TD>
+    <TD>110.2437</TD>
+    <TD>-10.3791</TD>
+    <TD>1666</TD>
+    <TD>M</TD>
+    <TD>07186-1017 </TD>
+    <TD>M7</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10851</TD>
+    <TD>l</TD>
+    <TD>14</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>110.243724</TD>
+    <TD>-10.379126</TD>
+  </TR>
+  <TR>
+    <TD>1815</TD>
+    <TD>07246-0903 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1720</TD>
+    <TD>C</TD>
+    <TD>S</TD>
+    <TD>13</TD>
+    <TD>0.3</TD>
+    <TD> </TD>
+    <TD>111.7674</TD>
+    <TD>-9.1521</TD>
+    <TD>1885</TD>
+    <TD>M</TD>
+    <TD>07246-0903 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8208</TD>
+    <TD>m</TD>
+    <TD>3</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>111.767428</TD>
+    <TD>-9.152148</TD>
+  </TR>
+  <TR>
+    <TD>1729</TD>
+    <TD>07118-1022 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>early M:</TD>
+    <TD>C</TD>
+    <TD>13</TD>
+    <TD>0.34</TD>
+    <TD> </TD>
+    <TD>108.5549</TD>
+    <TD>-10.4625</TD>
+    <TD>1455</TD>
+    <TD>M</TD>
+    <TD>07118-1022 </TD>
+    <TD>early M?</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>3188</TD>
+    <TD>m</TD>
+    <TD>4</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>108.554902</TD>
+    <TD>-10.462486</TD>
+  </TR>
+  <TR>
+    <TD>1662</TD>
+    <TD>07020-0953 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>BQ Mon</TD>
+    <TD>-10148 </TD>
+    <TD>      4556S </TD>
+    <TD> </TD>
+    <TD>M6</TD>
+    <TD>F</TD>
+    <TD>12</TD>
+    <TD>0.66</TD>
+    <TD> </TD>
+    <TD>106.1112</TD>
+    <TD>-9.9667</TD>
+    <TD>1169</TD>
+    <TD>M</TD>
+    <TD>07020-0953 </TD>
+    <TD>M7</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10850</TD>
+    <TD>l</TD>
+    <TD>14</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.11121</TD>
+    <TD>-9.966686</TD>
+  </TR>
+  <TR>
+    <TD>1667</TD>
+    <TD>07030-0940 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1541</TD>
+    <TD>C</TD>
+    <TD>F</TD>
+    <TD>8</TD>
+    <TD>0.44</TD>
+    <TD> </TD>
+    <TD>106.3523</TD>
+    <TD>-9.7461</TD>
+    <TD>1197</TD>
+    <TD>M</TD>
+    <TD>07030-0940 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10850</TD>
+    <TD>l</TD>
+    <TD>3</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.35233</TD>
+    <TD>-9.746144</TD>
+  </TR>
+  <TR>
+    <TD>1663</TD>
+    <TD>07021-0852 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>HN Mon</TD>
+    <TD>-10147 </TD>
+    <TD>       1060 </TD>
+    <TD> </TD>
+    <TD>M8</TD>
+    <TD>E</TD>
+    <TD>122</TD>
+    <TD>0.99</TD>
+    <TD> </TD>
+    <TD>106.1302</TD>
+    <TD>-8.9537</TD>
+    <TD>1172</TD>
+    <TD>M</TD>
+    <TD>07021-0852 </TD>
+    <TD>M9</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10850</TD>
+    <TD>l</TD>
+    <TD>5</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.130247</TD>
+    <TD>-8.953708</TD>
+  </TR>
+  <TR>
+    <TD>1581</TD>
+    <TD>06473-0932 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>GW Mon</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M7</TD>
+    <TD>E</TD>
+    <TD>8</TD>
+    <TD>0.79</TD>
+    <TD> </TD>
+    <TD>102.4335</TD>
+    <TD>-9.5949</TD>
+    <TD>759</TD>
+    <TD>M</TD>
+    <TD>06473-0932 </TD>
+    <TD>M10</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8161</TD>
+    <TD>m</TD>
+    <TD>3</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>102.433481</TD>
+    <TD>-9.594902</TD>
+  </TR>
+  <TR>
+    <TD>1629</TD>
+    <TD>06557-0857 </TD>
+    <TD>133965</TD>
+    <TD>      51725 </TD>
+    <TD>V523 Mon</TD>
+    <TD>-10143 </TD>
+    <TD>       1044 </TD>
+    <TD> </TD>
+    <TD>M5</TD>
+    <TD>S</TD>
+    <TD>15</TD>
+    <TD>0.12</TD>
+    <TD> </TD>
+    <TD>104.5241</TD>
+    <TD>-9.0262</TD>
+    <TD>991</TD>
+    <TD>M</TD>
+    <TD>06557-0857 </TD>
+    <TD>M4</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10850</TD>
+    <TD>l</TD>
+    <TD>18</TD>
+    <TD> </TD>
+    <TD>SAO 133965</TD>
+    <TD>104.524144</TD>
+    <TD>-9.026174</TD>
+  </TR>
+  <TR>
+    <TD>1624</TD>
+    <TD>06548-0859 </TD>
+    <TD>133942</TD>
+    <TD>      51478 </TD>
+    <TD>X Mon</TD>
+    <TD>-10142 </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M3e</TD>
+    <TD>F</TD>
+    <TD>12</TD>
+    <TD>0.6</TD>
+    <TD> </TD>
+    <TD>104.2981</TD>
+    <TD>-9.0643</TD>
+    <TD>965</TD>
+    <TD>M</TD>
+    <TD>06548-0859 </TD>
+    <TD>M4; sg?</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10850</TD>
+    <TD>l</TD>
+    <TD>14</TD>
+    <TD> </TD>
+    <TD>SAO 133942</TD>
+    <TD>104.298082</TD>
+    <TD>-9.064276</TD>
+  </TR>
+  <TR>
+    <TD>1612</TD>
+    <TD>06525-0757 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>EM Mon</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1464</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>6</TD>
+    <TD>0.15</TD>
+    <TD> </TD>
+    <TD>103.7305</TD>
+    <TD>-8.0221</TD>
+    <TD>905</TD>
+    <TD>M</TD>
+    <TD>06525-0757 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>11945</TD>
+    <TD>l</TD>
+    <TD>10</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>103.730506</TD>
+    <TD>-8.022141</TD>
+  </TR>
+  <TR>
+    <TD>1673</TD>
+    <TD>07040-0858 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1548</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>5</TD>
+    <TD>0.22</TD>
+    <TD> </TD>
+    <TD>106.6024</TD>
+    <TD>-9.0512</TD>
+    <TD>1233</TD>
+    <TD>M</TD>
+    <TD>07040-0858 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10850</TD>
+    <TD>l</TD>
+    <TD>3</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.602386</TD>
+    <TD>-9.051191</TD>
+  </TR>
+  <TR>
+    <TD>1681</TD>
+    <TD>07045-0728 </TD>
+    <TD></TD>
+    <TD>    -7 1742 </TD>
+    <TD>RY Mon</TD>
+    <TD>-10149 </TD>
+    <TD>       1070 </TD>
+    <TD>CS 1549, EIC 172</TD>
+    <TD>C5,5</TD>
+    <TD>C</TD>
+    <TD>59</TD>
+    <TD>0.23</TD>
+    <TD> </TD>
+    <TD>106.7366</TD>
+    <TD>-7.5576</TD>
+    <TD>1242</TD>
+    <TD>M</TD>
+    <TD>07045-0728 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10850</TD>
+    <TD>l</TD>
+    <TD>18</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>106.736606</TD>
+    <TD>-7.557633</TD>
+  </TR>
+  <TR>
+    <TD>1721</TD>
+    <TD>07103-0750 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>AM Mon</TD>
+    <TD>-10153 </TD>
+    <TD>       1087 </TD>
+    <TD> </TD>
+    <TD>M9e</TD>
+    <TD>E</TD>
+    <TD>13</TD>
+    <TD>0.8</TD>
+    <TD> </TD>
+    <TD>108.2018</TD>
+    <TD>-7.928</TD>
+    <TD>1417</TD>
+    <TD>M</TD>
+    <TD>07103-0750 </TD>
+    <TD>M8</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10850</TD>
+    <TD>l</TD>
+    <TD>10</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>108.201823</TD>
+    <TD>-7.928049</TD>
+  </TR>
+  <TR>
+    <TD>1642</TD>
+    <TD>06583-0655 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M9</TD>
+    <TD>E</TD>
+    <TD>8</TD>
+    <TD>0.9</TD>
+    <TD> </TD>
+    <TD>105.1832</TD>
+    <TD>-6.9948</TD>
+    <TD>1052</TD>
+    <TD>M</TD>
+    <TD>06583-0655 </TD>
+    <TD>M9</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>11945</TD>
+    <TD>l</TD>
+    <TD>3</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>105.183172</TD>
+    <TD>-6.994805</TD>
+  </TR>
+  <TR>
+    <TD>1833</TD>
+    <TD>07277-0916 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>KO Mon</TD>
+    <TD>-10167 </TD>
+    <TD>      4606S </TD>
+    <TD> </TD>
+    <TD>M6</TD>
+    <TD>E</TD>
+    <TD>10</TD>
+    <TD>0.81</TD>
+    <TD> </TD>
+    <TD>112.5316</TD>
+    <TD>-9.3875</TD>
+    <TD>1961</TD>
+    <TD>M</TD>
+    <TD>07277-0916 </TD>
+    <TD>M6</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8208</TD>
+    <TD>m</TD>
+    <TD>10</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>112.531571</TD>
+    <TD>-9.38754</TD>
+  </TR>
+  <TR>
+    <TD>1809</TD>
+    <TD>07232-0544 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>TT Mon</TD>
+    <TD>-10163 </TD>
+    <TD>       1118 </TD>
+    <TD> </TD>
+    <TD>M5e</TD>
+    <TD>E</TD>
+    <TD>44</TD>
+    <TD>0.81</TD>
+    <TD> </TD>
+    <TD>111.4184</TD>
+    <TD>-5.85</TD>
+    <TD>1837</TD>
+    <TD>M</TD>
+    <TD>07232-0544 </TD>
+    <TD>M9</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8206</TD>
+    <TD>m</TD>
+    <TD>8</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>111.418384</TD>
+    <TD>-5.849977</TD>
+  </TR>
+  <TR>
+    <TD>1824</TD>
+    <TD>07266-0541 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>F</TD>
+    <TD>44</TD>
+    <TD>1.39</TD>
+    <TD> </TD>
+    <TD>112.2863</TD>
+    <TD>-5.7933</TD>
+    <TD>1932</TD>
+    <TD>M</TD>
+    <TD>07266-0541 </TD>
+    <TD>very faint cont.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>29838</TD>
+    <TD>l</TD>
+    <TD>1</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>112.286309</TD>
+    <TD>-5.793342</TD>
+  </TR>
+  <TR>
+    <TD>1806</TD>
+    <TD>07227-0537 </TD>
+    <TD></TD>
+    <TD>    -5 2105 </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>&lt;M</TD>
+    <TD>I</TD>
+    <TD>8</TD>
+    <TD>0.52</TD>
+    <TD> </TD>
+    <TD>111.3031</TD>
+    <TD>-5.7328</TD>
+    <TD>1818</TD>
+    <TD>M</TD>
+    <TD>07227-0537 </TD>
+    <TD>&lt;M</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8206</TD>
+    <TD>m</TD>
+    <TD>2</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>111.303066</TD>
+    <TD>-5.732786</TD>
+  </TR>
+  <TR>
+    <TD>1810</TD>
+    <TD>07235-0356 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1708</TD>
+    <TD>C5,3J</TD>
+    <TD>I</TD>
+    <TD>5</TD>
+    <TD>0.18</TD>
+    <TD> </TD>
+    <TD>111.52</TD>
+    <TD>-4.0343</TD>
+    <TD>1848</TD>
+    <TD>M</TD>
+    <TD>07235-0356 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8187</TD>
+    <TD>m</TD>
+    <TD>9</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>111.520021</TD>
+    <TD>-4.034307</TD>
+  </TR>
+  <TR>
+    <TD>1724</TD>
+    <TD>07112-0351 </TD>
+    <TD>134375</TD>
+    <TD>      55653 </TD>
+    <TD> </TD>
+    <TD>   149 </TD>
+    <TD>            </TD>
+    <TD>EIC 176</TD>
+    <TD>M5</TD>
+    <TD>F</TD>
+    <TD>10</TD>
+    <TD>0.37</TD>
+    <TD> </TD>
+    <TD>108.4375</TD>
+    <TD>-3.9494</TD>
+    <TD>1436</TD>
+    <TD>M</TD>
+    <TD>07112-0351 </TD>
+    <TD>M5</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8187</TD>
+    <TD>m</TD>
+    <TD>13</TD>
+    <TD> </TD>
+    <TD>SAO 134375</TD>
+    <TD>108.437531</TD>
+    <TD>-3.949372</TD>
+  </TR>
+  <TR>
+    <TD>1778</TD>
+    <TD>07195-0327 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>F</TD>
+    <TD>20</TD>
+    <TD>0.62</TD>
+    <TD> </TD>
+    <TD>110.5242</TD>
+    <TD>-3.5464</TD>
+    <TD>1698</TD>
+    <TD>M</TD>
+    <TD>07195-0327 </TD>
+    <TD>very ft. red cont.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26610</TD>
+    <TD>l</TD>
+    <TD>1</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>110.524208</TD>
+    <TD>-3.546443</TD>
+  </TR>
+  <TR>
+    <TD>1826</TD>
+    <TD>07268-0410 </TD>
+    <TD></TD>
+    <TD>      59334 </TD>
+    <TD>RX Mon</TD>
+    <TD>   156 </TD>
+    <TD>      4603S </TD>
+    <TD> </TD>
+    <TD>M6e</TD>
+    <TD>F</TD>
+    <TD>14</TD>
+    <TD>0.47</TD>
+    <TD> </TD>
+    <TD>112.3399</TD>
+    <TD>-4.2788</TD>
+    <TD>1937</TD>
+    <TD>M</TD>
+    <TD>07268-0410 </TD>
+    <TD>M7</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8206</TD>
+    <TD>m</TD>
+    <TD>12</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>112.339858</TD>
+    <TD>-4.278846</TD>
+  </TR>
+  <TR>
+    <TD>1808</TD>
+    <TD>07231-0300 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>V686 Mon</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M10</TD>
+    <TD>E</TD>
+    <TD>9</TD>
+    <TD>1.06</TD>
+    <TD> </TD>
+    <TD>111.4238</TD>
+    <TD>-3.1055</TD>
+    <TD>1832</TD>
+    <TD>M</TD>
+    <TD>07231-0300 </TD>
+    <TD>M10</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8187</TD>
+    <TD>m</TD>
+    <TD>3</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>111.423817</TD>
+    <TD>-3.105528</TD>
+  </TR>
+  <TR>
+    <TD>1767</TD>
+    <TD>07174-0203 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1654</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>5</TD>
+    <TD>0.36</TD>
+    <TD> </TD>
+    <TD>110.0018</TD>
+    <TD>-2.1513</TD>
+    <TD>1624</TD>
+    <TD>M</TD>
+    <TD>07174-0203 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8187</TD>
+    <TD>m</TD>
+    <TD>3</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>110.001797</TD>
+    <TD>-2.151265</TD>
+  </TR>
+  <TR>
+    <TD>1558</TD>
+    <TD>06426-0825 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>F</TD>
+    <TD>19</TD>
+    <TD>0.23</TD>
+    <TD> </TD>
+    <TD>101.275</TD>
+    <TD>-8.4722</TD>
+    <TD>675</TD>
+    <TD>M</TD>
+    <TD>06426-0825 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>11945</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>101.275016</TD>
+    <TD>-8.472153</TD>
+  </TR>
+  <TR>
+    <TD>1547</TD>
+    <TD>06408-0842 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1373</TD>
+    <TD>C3,4</TD>
+    <TD>I</TD>
+    <TD>7</TD>
+    <TD>0.23</TD>
+    <TD> </TD>
+    <TD>100.801</TD>
+    <TD>-8.7582</TD>
+    <TD>644</TD>
+    <TD>M</TD>
+    <TD>06408-0842 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>11945</TD>
+    <TD>l</TD>
+    <TD>12</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>100.801049</TD>
+    <TD>-8.758228</TD>
+  </TR>
+  <TR>
+    <TD>1531</TD>
+    <TD>06391-0803 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>C</TD>
+    <TD>14</TD>
+    <TD>1.16</TD>
+    <TD> </TD>
+    <TD>100.3946</TD>
+    <TD>-8.1082</TD>
+    <TD>614</TD>
+    <TD>M</TD>
+    <TD>06391-0803 </TD>
+    <TD>very faint cont.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>11945</TD>
+    <TD>l</TD>
+    <TD>1</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>100.394584</TD>
+    <TD>-8.108222</TD>
+  </TR>
+  <TR>
+    <TD>1584</TD>
+    <TD>06485-0748 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>F</TD>
+    <TD>11</TD>
+    <TD>0.47</TD>
+    <TD> </TD>
+    <TD>102.7473</TD>
+    <TD>-7.8758</TD>
+    <TD>789</TD>
+    <TD>M</TD>
+    <TD>06485-0748 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>11945</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>102.747303</TD>
+    <TD>-7.875817</TD>
+  </TR>
+  <TR>
+    <TD>1524</TD>
+    <TD>06378-0617 </TD>
+    <TD>133552</TD>
+    <TD>      47821 </TD>
+    <TD> </TD>
+    <TD>-10136 </TD>
+    <TD>      4518S </TD>
+    <TD>EIC 147</TD>
+    <TD>M3 III</TD>
+    <TD>S</TD>
+    <TD>7</TD>
+    <TD>0.09</TD>
+    <TD> </TD>
+    <TD>100.0773</TD>
+    <TD>-6.3461</TD>
+    <TD>596</TD>
+    <TD>M</TD>
+    <TD>06378-0617 </TD>
+    <TD>M3; redd.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8027</TD>
+    <TD>m</TD>
+    <TD>15</TD>
+    <TD> </TD>
+    <TD>SAO 133552</TD>
+    <TD>100.077281</TD>
+    <TD>-6.346127</TD>
+  </TR>
+  <TR>
+    <TD>1600</TD>
+    <TD>06505-0450 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>(CO)</TD>
+    <TD>F</TD>
+    <TD>26</TD>
+    <TD>1.18</TD>
+    <TD> </TD>
+    <TD>103.2571</TD>
+    <TD>-4.8974</TD>
+    <TD>845</TD>
+    <TD>M</TD>
+    <TD>06505-0450 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>11945</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>103.257081</TD>
+    <TD>-4.897366</TD>
+  </TR>
+  <TR>
+    <TD>1607</TD>
+    <TD>06515-0415 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>&lt;M</TD>
+    <TD>F</TD>
+    <TD>8</TD>
+    <TD>0.79</TD>
+    <TD> </TD>
+    <TD>103.5177</TD>
+    <TD>-4.3264</TD>
+    <TD>878</TD>
+    <TD>M</TD>
+    <TD>06515-0415 </TD>
+    <TD>&lt;M</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>11945</TD>
+    <TD>l</TD>
+    <TD>4</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>103.517742</TD>
+    <TD>-4.32637</TD>
+  </TR>
+  <TR>
+    <TD>1523</TD>
+    <TD>06378-0527 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1353</TD>
+    <TD>(SiC)</TD>
+    <TD>C</TD>
+    <TD>31</TD>
+    <TD>0.87</TD>
+    <TD> </TD>
+    <TD>100.078</TD>
+    <TD>-5.5003</TD>
+    <TD>595</TD>
+    <TD>M</TD>
+    <TD>06378-0527 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8027</TD>
+    <TD>m</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>100.078041</TD>
+    <TD>-5.500288</TD>
+  </TR>
+  <TR>
+    <TD>1618</TD>
+    <TD>06531-0216 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>       1039 </TD>
+    <TD>CS 1471</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>49</TD>
+    <TD>0.37</TD>
+    <TD> </TD>
+    <TD>103.9185</TD>
+    <TD>-2.338</TD>
+    <TD>920</TD>
+    <TD>M</TD>
+    <TD>06531-0216 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10822</TD>
+    <TD>l</TD>
+    <TD>7</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>103.918452</TD>
+    <TD>-2.337964</TD>
+  </TR>
+  <TR>
+    <TD>1577</TD>
+    <TD>06465-0136 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>V377 Mon</TD>
+    <TD>   129 </TD>
+    <TD>      4534S </TD>
+    <TD> </TD>
+    <TD>M6</TD>
+    <TD>U</TD>
+    <TD>9</TD>
+    <TD>0.81</TD>
+    <TD> </TD>
+    <TD>102.2603</TD>
+    <TD>-1.6601</TD>
+    <TD>744</TD>
+    <TD>M</TD>
+    <TD>06465-0136 </TD>
+    <TD>M5; redd.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10822</TD>
+    <TD>l</TD>
+    <TD>14</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>102.260337</TD>
+    <TD>-1.6601</TD>
+  </TR>
+  <TR>
+    <TD>1520</TD>
+    <TD>06369-0224 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>   122 </TD>
+    <TD>        986 </TD>
+    <TD> </TD>
+    <TD>M6</TD>
+    <TD>I</TD>
+    <TD>9</TD>
+    <TD>0.59</TD>
+    <TD> </TD>
+    <TD>99.8664</TD>
+    <TD>-2.4626</TD>
+    <TD>579</TD>
+    <TD>M</TD>
+    <TD>06369-0224 </TD>
+    <TD>M7; C star 48" NW</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26621</TD>
+    <TD>l</TD>
+    <TD>12</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>99.866399</TD>
+    <TD>-2.462572</TD>
+  </TR>
+  <TR>
+    <TD>1514</TD>
+    <TD>06358-0136 </TD>
+    <TD></TD>
+    <TD>    -1 1309 </TD>
+    <TD>3057</TD>
+    <TD>   121 </TD>
+    <TD>       5202 </TD>
+    <TD> </TD>
+    <TD>M6.5</TD>
+    <TD>E</TD>
+    <TD>17</TD>
+    <TD>0.75</TD>
+    <TD> </TD>
+    <TD>99.6011</TD>
+    <TD>-1.651</TD>
+    <TD>554</TD>
+    <TD>M</TD>
+    <TD>06358-0136 </TD>
+    <TD>M6</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8009</TD>
+    <TD>m</TD>
+    <TD>12</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>99.601116</TD>
+    <TD>-1.651014</TD>
+  </TR>
+  <TR>
+    <TD>1645</TD>
+    <TD>06585-0310 </TD>
+    <TD>134049</TD>
+    <TD>      52432 </TD>
+    <TD>V614 Mon</TD>
+    <TD>   141 </TD>
+    <TD>       1053 </TD>
+    <TD>CS 1507, EIC 167</TD>
+    <TD>C4,5J</TD>
+    <TD>S</TD>
+    <TD>17</TD>
+    <TD>0.05</TD>
+    <TD> </TD>
+    <TD>105.2567</TD>
+    <TD>-3.2521</TD>
+    <TD>1056</TD>
+    <TD>M</TD>
+    <TD>06585-0310 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10822</TD>
+    <TD>l</TD>
+    <TD>14</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>105.256731</TD>
+    <TD>-3.252053</TD>
+  </TR>
+  <TR>
+    <TD>1657</TD>
+    <TD>07011-0306 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>MV Mon</TD>
+    <TD>   144 </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M7</TD>
+    <TD>E</TD>
+    <TD>8</TD>
+    <TD>0.67</TD>
+    <TD> </TD>
+    <TD>105.9067</TD>
+    <TD>-3.1859</TD>
+    <TD>1133</TD>
+    <TD>M</TD>
+    <TD>07011-0306 </TD>
+    <TD>M7</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10743</TD>
+    <TD>l</TD>
+    <TD>14</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>105.906679</TD>
+    <TD>-3.185931</TD>
+  </TR>
+  <TR>
+    <TD>1655</TD>
+    <TD>07002-0155 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M8</TD>
+    <TD>E</TD>
+    <TD>9</TD>
+    <TD>1.02</TD>
+    <TD> </TD>
+    <TD>105.6872</TD>
+    <TD>-1.9993</TD>
+    <TD>1106</TD>
+    <TD>M</TD>
+    <TD>07002-0155 </TD>
+    <TD>M8</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10743</TD>
+    <TD>l</TD>
+    <TD>8</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>105.68723</TD>
+    <TD>-1.999335</TD>
+  </TR>
+  <TR>
+    <TD>1710</TD>
+    <TD>07088-0124 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>BW Mon</TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M5:</TD>
+    <TD>E</TD>
+    <TD>9</TD>
+    <TD>1.09</TD>
+    <TD> </TD>
+    <TD>107.8414</TD>
+    <TD>-1.4938</TD>
+    <TD>1371</TD>
+    <TD>M</TD>
+    <TD>07088-0124 </TD>
+    <TD>M5:</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26622</TD>
+    <TD>l</TD>
+    <TD>8</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>107.841366</TD>
+    <TD>-1.493811</TD>
+  </TR>
+  <TR>
+    <TD>1704</TD>
+    <TD>07080-0106 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1580</TD>
+    <TD>(SiC)</TD>
+    <TD>C</TD>
+    <TD>41</TD>
+    <TD>0.84</TD>
+    <TD> </TD>
+    <TD>107.6457</TD>
+    <TD>-1.1904</TD>
+    <TD>1349</TD>
+    <TD>M</TD>
+    <TD>07080-0106 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26622</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>107.645681</TD>
+    <TD>-1.1904</TD>
+  </TR>
+  <TR>
+    <TD>1757</TD>
+    <TD>07161-0111 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1642</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>47</TD>
+    <TD>0.62</TD>
+    <TD> </TD>
+    <TD>109.6608</TD>
+    <TD>-1.2808</TD>
+    <TD>1587</TD>
+    <TD>M</TD>
+    <TD>07161-0111 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26622</TD>
+    <TD>l</TD>
+    <TD>7</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>109.660767</TD>
+    <TD>-1.280805</TD>
+  </TR>
+  <TR>
+    <TD>1751</TD>
+    <TD>07149-0046 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1638</TD>
+    <TD>(SiC)</TD>
+    <TD>C</TD>
+    <TD>25</TD>
+    <TD>0.95</TD>
+    <TD> </TD>
+    <TD>109.3847</TD>
+    <TD>-0.8648</TD>
+    <TD>1558</TD>
+    <TD>M</TD>
+    <TD>07149-0046 </TD>
+    <TD>very faint cont.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26622</TD>
+    <TD>l</TD>
+    <TD>1</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>109.384749</TD>
+    <TD>-0.864812</TD>
+  </TR>
+  <TR>
+    <TD>1798</TD>
+    <TD>07220-0050 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1697</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>8</TD>
+    <TD>0.19</TD>
+    <TD> </TD>
+    <TD>111.139</TD>
+    <TD>-0.9442</TD>
+    <TD>1789</TD>
+    <TD>M</TD>
+    <TD>07220-0050 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8187</TD>
+    <TD>m</TD>
+    <TD>4</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>111.139031</TD>
+    <TD>-0.944213</TD>
+  </TR>
+  <TR>
+    <TD>1726</TD>
+    <TD>07113-0025 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>C</TD>
+    <TD>8</TD>
+    <TD>0.73</TD>
+    <TD> </TD>
+    <TD>108.4709</TD>
+    <TD>-0.5167</TD>
+    <TD>1438</TD>
+    <TD>M</TD>
+    <TD>07113-0025 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26622</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>108.470909</TD>
+    <TD>-0.516712</TD>
+  </TR>
+  <TR>
+    <TD>1708</TD>
+    <TD>07085-0018 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>       5225 </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>C</TD>
+    <TD>37</TD>
+    <TD>0.85</TD>
+    <TD> </TD>
+    <TD>107.7794</TD>
+    <TD>-0.3868</TD>
+    <TD>1362</TD>
+    <TD>M</TD>
+    <TD>07085-0018 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26622</TD>
+    <TD>l</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>107.779411</TD>
+    <TD>-0.386845</TD>
+  </TR>
+  <TR>
+    <TD>1750</TD>
+    <TD>07149+0111 </TD>
+    <TD></TD>
+    <TD>      56567 </TD>
+    <TD>RR Mon</TD>
+    <TD>   153 </TD>
+    <TD>            </TD>
+    <TD>SS 326</TD>
+    <TD>S7,2e:</TD>
+    <TD>E</TD>
+    <TD>27</TD>
+    <TD>0.67</TD>
+    <TD> </TD>
+    <TD>109.3812</TD>
+    <TD>1.0949</TD>
+    <TD>1556</TD>
+    <TD>M</TD>
+    <TD>07149+0111 </TD>
+    <TD>S star; RR Mon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>26622</TD>
+    <TD>l</TD>
+    <TD>19</TD>
+    <TD> </TD>
+    <TD>GCGSS2 326</TD>
+    <TD>109.381249</TD>
+    <TD>1.094947</TD>
+  </TR>
+  <TR>
+    <TD>1583</TD>
+    <TD>06483-0000 </TD>
+    <TD></TD>
+    <TD>    +0 1644 </TD>
+    <TD>V517 Mon</TD>
+    <TD>   132 </TD>
+    <TD>            </TD>
+    <TD>EIC 158</TD>
+    <TD>M2 Ia</TD>
+    <TD>E</TD>
+    <TD>19</TD>
+    <TD>1.19</TD>
+    <TD> </TD>
+    <TD>102.7208</TD>
+    <TD>-0.0731</TD>
+    <TD>783</TD>
+    <TD>M</TD>
+    <TD>06483-0000 </TD>
+    <TD>early M; redd.</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10822</TD>
+    <TD>l</TD>
+    <TD>15</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>102.720805</TD>
+    <TD>-0.073102</TD>
+  </TR>
+  <TR>
+    <TD>1617</TD>
+    <TD>06531+0006 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1470</TD>
+    <TD>C</TD>
+    <TD>C</TD>
+    <TD>5</TD>
+    <TD>0.3</TD>
+    <TD> </TD>
+    <TD>103.9322</TD>
+    <TD>0.0476</TD>
+    <TD>917</TD>
+    <TD>M</TD>
+    <TD>06531+0006 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10822</TD>
+    <TD>l</TD>
+    <TD>4</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>103.932223</TD>
+    <TD>0.047553</TD>
+  </TR>
+  <TR>
+    <TD>1606</TD>
+    <TD>06515+0051 </TD>
+    <TD></TD>
+    <TD>    +0 1689 </TD>
+    <TD>QR Mon</TD>
+    <TD>   137 </TD>
+    <TD>      4541S </TD>
+    <TD> </TD>
+    <TD>M6</TD>
+    <TD>E</TD>
+    <TD>25</TD>
+    <TD>1.06</TD>
+    <TD> </TD>
+    <TD>103.5262</TD>
+    <TD>0.7931</TD>
+    <TD>877</TD>
+    <TD>M</TD>
+    <TD>06515+0051 </TD>
+    <TD>M7</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>10794</TD>
+    <TD>l</TD>
+    <TD>15</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>103.526162</TD>
+    <TD>0.793092</TD>
+  </TR>
+  <TR>
+    <TD>1709</TD>
+    <TD>07086+0214 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>M8</TD>
+    <TD>U</TD>
+    <TD>8</TD>
+    <TD>0.9</TD>
+    <TD> </TD>
+    <TD>107.825</TD>
+    <TD>2.1616</TD>
+    <TD>1364</TD>
+    <TD>M</TD>
+    <TD>07086+0214 </TD>
+    <TD>M8</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>7865</TD>
+    <TD>m</TD>
+    <TD>7</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>107.824976</TD>
+    <TD>2.161583</TD>
+  </TR>
+  <TR>
+    <TD>1720</TD>
+    <TD>07103+0242 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>XX CMi</TD>
+    <TD>   148 </TD>
+    <TD>            </TD>
+    <TD>EIC 175</TD>
+    <TD>M7</TD>
+    <TD>F</TD>
+    <TD>7</TD>
+    <TD>0.71</TD>
+    <TD> </TD>
+    <TD>108.2413</TD>
+    <TD>2.6252</TD>
+    <TD>1414</TD>
+    <TD>M</TD>
+    <TD>07103+0242 </TD>
+    <TD>M9</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>7865</TD>
+    <TD>m</TD>
+    <TD>6</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>108.24127</TD>
+    <TD>2.625217</TD>
+  </TR>
+  <TR>
+    <TD>1430</TD>
+    <TD>06233-0050 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD>CS 1270</TD>
+    <TD>C</TD>
+    <TD>I</TD>
+    <TD>7</TD>
+    <TD>0.29</TD>
+    <TD> </TD>
+    <TD>96.4689</TD>
+    <TD>-0.8776</TD>
+    <TD>416</TD>
+    <TD>M</TD>
+    <TD>06233-0050 </TD>
+    <TD>carbon</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8009</TD>
+    <TD>m</TD>
+    <TD>8</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>96.468927</TD>
+    <TD>-0.877594</TD>
+  </TR>
+  <TR>
+    <TD>1492</TD>
+    <TD>06326-0128 </TD>
+    <TD>133437</TD>
+    <TD>      46785 </TD>
+    <TD> </TD>
+    <TD>   117 </TD>
+    <TD>      4510S </TD>
+    <TD>EIC 141</TD>
+    <TD>M5</TD>
+    <TD>S</TD>
+    <TD>15</TD>
+    <TD>0.23</TD>
+    <TD> </TD>
+    <TD>98.8005</TD>
+    <TD>-1.5094</TD>
+    <TD>512</TD>
+    <TD>M</TD>
+    <TD>06326-0128 </TD>
+    <TD>M5</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8009</TD>
+    <TD>m</TD>
+    <TD>15</TD>
+    <TD> </TD>
+    <TD>SAO 133437</TD>
+    <TD>98.800521</TD>
+    <TD>-1.509392</TD>
+  </TR>
+  <TR>
+    <TD>1500</TD>
+    <TD>06344-0124 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>F</TD>
+    <TD>28</TD>
+    <TD>1.49</TD>
+    <TD> </TD>
+    <TD>99.2558</TD>
+    <TD>-1.4505</TD>
+    <TD>529</TD>
+    <TD>M</TD>
+    <TD>06344-0124 </TD>
+    <TD>blank field</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8009</TD>
+    <TD>m</TD>
+    <TD>0</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>99.255818</TD>
+    <TD>-1.450466</TD>
+  </TR>
+  <TR>
+    <TD>1509</TD>
+    <TD>06349-0121 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD>SY Mon</TD>
+    <TD>   119 </TD>
+    <TD>        977 </TD>
+    <TD>EIC 143</TD>
+    <TD>M6e</TD>
+    <TD>E</TD>
+    <TD>148</TD>
+    <TD>0.79</TD>
+    <TD> </TD>
+    <TD>99.3803</TD>
+    <TD>-1.3952</TD>
+    <TD>537</TD>
+    <TD>M</TD>
+    <TD>06349-0121 </TD>
+    <TD>M7</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8009</TD>
+    <TD>m</TD>
+    <TD>14</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>99.380254</TD>
+    <TD>-1.395229</TD>
+  </TR>
+  <TR>
+    <TD>1493</TD>
+    <TD>06329-0106 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>       </TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>E</TD>
+    <TD>32</TD>
+    <TD>1.35</TD>
+    <TD> </TD>
+    <TD>98.8831</TD>
+    <TD>-1.157</TD>
+    <TD>513</TD>
+    <TD>M</TD>
+    <TD>06329-0106 </TD>
+    <TD>prob. late M</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>11944</TD>
+    <TD>l</TD>
+    <TD>1</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>98.883051</TD>
+    <TD>-1.157006</TD>
+  </TR>
+  <TR>
+    <TD>1413</TD>
+    <TD>06215-0015 </TD>
+    <TD></TD>
+    <TD>            </TD>
+    <TD> </TD>
+    <TD>   105 </TD>
+    <TD>       4060 </TD>
+    <TD> </TD>
+    <TD>M7</TD>
+    <TD>F</TD>
+    <TD>12</TD>
+    <TD>0.94</TD>
+    <TD> </TD>
+    <TD>96.0214</TD>
+    <TD>-0.2824</TD>
+    <TD>395</TD>
+    <TD>M</TD>
+    <TD>06215-0015 </TD>
+    <TD>M6</TD>
+    <TD></TD>
+    <TD>  </TD>
+    <TD>8009</TD>
+    <TD>m</TD>
+    <TD>11</TD>
+    <TD> </TD>
+    <TD> </TD>
+    <TD>96.021379</TD>
+    <TD>-0.282369</TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>
