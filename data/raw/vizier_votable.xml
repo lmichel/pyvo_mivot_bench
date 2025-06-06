@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.cds.unistra.fr
+    Date: 2025-05-09T17:10:41 [V7.4.6]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO name="service_protocol" value="ASU">  IVOID of the protocol through which the data was retrieved</INFO>
+<INFO name="request_date" value="2025-05-09T17:10:41">  Query execution date</INFO>
+<INFO name="request" value="https://vizier.cds.unistra.fr/viz-bin/votable?-oc.form=dec&amp;-out.max=10&amp;-order=I&amp;-out.src=I/329/urat1&amp;-c.eq=J2000&amp;-c.r=  2&amp;-c.u=arcmin&amp;-c.geom=r&amp;-source=I/329/urat1&amp;-out=URAT1&amp;-out=RAICRS&amp;-out=DEICRS&amp;-out=Epoch&amp;-out=f.mag&amp;-out=e_f.mag&amp;-out=pmRA&amp;-out=pmDE&amp;-out=Jmag&amp;-out=e_Jmag&amp;-out=Hmag&amp;-out=e_Hmag&amp;-out=Kmag&amp;-out=e_Kmag&amp;-out=Bmag&amp;-out=e_Bmag&amp;-out=Vmag&amp;-out=e_Vmag&amp;-out=gmag&amp;-out=e_gmag&amp;-out=rmag&amp;-out=e_rmag&amp;-out=imag&amp;-out=e_imag&amp;">  Full request URL (POST)</INFO>
+<INFO name="contact" value="cds-question@unistra.fr">  Email or URL to contact publisher</INFO>
+<INFO name="server_software" value="7.4.6">  Software version</INFO>
+<INFO name="publisher" value="CDS">  Data centre that produced the VOTable</INFO>
+
+<!--
+Execution Reports
+ -->
+
+<RESOURCE ID="yCat_1329" name="I/329" type="results">
+  <DESCRIPTION>URAT1 Catalog (Zacharias+ 2015)</DESCRIPTION>  <INFO name="ivoid" value="ivo://cds.vizier/i/329">    IVOID of underlying data collection  </INFO>
+  <INFO name="creator" value="Zacharias N.">    First author or institution  </INFO>
+  <INFO name="cites" value="bibcode:2015AJ....150..101Z">    Article or Data origin sources  </INFO>
+  <INFO name="editor" value="Astronomical Journal (AAS)">    Editor name (article)  </INFO>
+  <INFO name="original_date" value="2015">    Year of the article publication  </INFO>
+  <INFO name="reference_url" value="https://cdsarc.cds.unistra.fr/viz-bin/cat/I/329">    Dataset landing page  </INFO>
+  <INFO name="publication_date" value="2023-12-19">    Date of first publication in the data centre  </INFO>
+  <INFO name="rights_uri" value="https://cds.unistra.fr/vizier-org/licences_vizier.html">    Licence URI  </INFO>
+
+  <COOSYS ID="H" system="ICRS"/>
+  <TIMESYS ID="time_1" refposition="UNKNOWN" timeorigin="0.000000" timescale="UNKNOWN"/>
+  <TABLE ID="I_329_urat1" name="I/329/urat1">
+    <DESCRIPTION>URAT1 catalog</DESCRIPTION>
+    <!-- Definitions of GROUPs and FIELDs -->
+    <FIELD name="URAT1" ucd="meta.id;meta.main" datatype="char" arraysize="10*"><!-- ucd="ID_MAIN" -->
+      <DESCRIPTION>URAT1 recommended identifier (ZZZ-NNNNNN) (13)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="RAICRS" ucd="pos.eq.ra;meta.main" ref="H" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EQ_RA_MAIN" -->
+      <DESCRIPTION>Right ascension on ICRS, at "Epoch" (1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="DEICRS" ucd="pos.eq.dec;meta.main" ref="H" datatype="double" width="11" precision="7" unit="deg"><!-- ucd="POS_EQ_DEC_MAIN" -->
+      <DESCRIPTION>Declination on ICRS, at "Epoch" (1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Epoch" ucd="time.epoch;obs;stat.mean" ref="H" ID="_tab1_8" datatype="double" width="8" precision="3" unit="yr"><!-- ucd="TIME_EPOCH" -->
+      <DESCRIPTION>(epoc) Mean URAT observation epoch (1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="f.mag" ucd="phot.mag;em.opt.R" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_MAG_OPTICAL" -->
+      <DESCRIPTION>?(mmag) mean URAT model fit magnitude (4)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_f.mag" ucd="stat.error" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>?(sigp) URAT photometry error (5)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="pmRA" ucd="pos.pm;pos.eq.ra" ref="H" datatype="float" width="6" precision="1" unit="mas/yr"><!-- ucd="POS_EQ_PMRA" -->
+      <DESCRIPTION>?(pmr) Proper motion RA*cosDec (from 2MASS) (7)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="pmDE" ucd="pos.pm;pos.eq.dec" ref="H" datatype="float" width="6" precision="1" unit="mas/yr"><!-- ucd="POS_EQ_PMDEC" -->
+      <DESCRIPTION>?(pmd) Proper motion in Declination (7)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Jmag" ucd="phot.mag;em.IR.J" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_JHN_J" -->
+      <DESCRIPTION>?(jmag) 2MASS J-band magnitude</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_Jmag" ucd="stat.error;phot.mag" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>?(ejmag) Error on Jmag</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Hmag" ucd="phot.mag;em.IR.H" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_JHN_H" -->
+      <DESCRIPTION>?(hmag) 2MASS H-band magnitude</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_Hmag" ucd="stat.error;phot.mag" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>?(ehmag) Error on H-band magnitude (10)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Kmag" ucd="phot.mag;em.IR.K" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_JHN_K" -->
+      <DESCRIPTION>?(kmag) 2MASS Ks-band magnitude</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_Kmag" ucd="stat.error;phot.mag" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>?(ekmag) Error on Ks-band magnitude (10)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Bmag" ucd="phot.mag;em.opt.B" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_MAG_B" -->
+      <DESCRIPTION>?(abm) APASS B-band magnitude (11)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_Bmag" ucd="stat.error;phot.mag" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>?(ebm) Error on Bmag</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Vmag" ucd="phot.mag;em.opt.V" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_MAG_V" -->
+      <DESCRIPTION>?(avm) APASS V-band magnitude</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_Vmag" ucd="stat.error;phot.mag" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>?(evm) Error on Vmag</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="gmag" ucd="phot.mag;em.opt.B" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_SDSS_G" -->
+      <DESCRIPTION>?(agm) APASS g-band magnitude</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_gmag" ucd="stat.error;phot.mag" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>?(egm) Error on gmag</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="rmag" ucd="phot.mag;em.opt.R" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_SDSS_R" -->
+      <DESCRIPTION>?(arm) APASS r-band magnitude</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_rmag" ucd="stat.error;phot.mag" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>?(erm) Error on rmag</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="imag" ucd="phot.mag;em.opt.I" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_SDSS_I" -->
+      <DESCRIPTION>?(aim) APASS i-band magnitude</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_imag" ucd="stat.error;phot.mag" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>?(eim) Error on imag</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>458-007880</TD><TD>045.5758156</TD><TD>+01.5797894</TD><TD>2012.934</TD><TD>17.243</TD><TD></TD><TD>-10.7</TD><TD>-8.6</TD><TD>15.379</TD><TD>0.043</TD><TD>14.721</TD><TD>0.055</TD><TD>14.566</TD><TD>0.075</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>458-007873</TD><TD>045.5592133</TD><TD>+01.5879758</TD><TD>2013.584</TD><TD>15.992</TD><TD>0.081</TD><TD>-12.2</TD><TD>5.3</TD><TD>15.015</TD><TD>0.035</TD><TD>14.494</TD><TD>0.030</TD><TD>14.321</TD><TD>0.057</TD><TD>17.088</TD><TD>0.001</TD><TD>16.337</TD><TD>0.001</TD><TD>16.800</TD><TD>0.059</TD><TD>16.227</TD><TD>0.011</TD><TD>15.954</TD><TD>0.133</TD></TR>
+<TR><TD>458-007882</TD><TD>045.5772811</TD><TD>+01.5965264</TD><TD>2012.936</TD><TD>17.845</TD><TD></TD><TD>3.0</TD><TD>-9.2</TD><TD>15.720</TD><TD>0.056</TD><TD>15.138</TD><TD>0.059</TD><TD>14.741</TD><TD>0.098</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>458-007860</TD><TD>045.5202258</TD><TD>+01.5699019</TD><TD>2012.936</TD><TD>18.098</TD><TD></TD><TD>-9.7</TD><TD>-12.9</TD><TD>16.480</TD><TD>0.102</TD><TD>16.153</TD><TD>0.168</TD><TD>15.834</TD><TD>0.216</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>458-007853</TD><TD>045.5053017</TD><TD>+01.5679769</TD><TD>2013.007</TD><TD>16.693</TD><TD>0.016</TD><TD>12.2</TD><TD>-12.6</TD><TD>15.415</TD><TD>0.046</TD><TD>14.972</TD><TD>0.056</TD><TD>14.891</TD><TD>0.092</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>458-007847</TD><TD>045.4688544</TD><TD>+01.5915361</TD><TD>2013.139</TD><TD>16.949</TD><TD>0.035</TD><TD>7.4</TD><TD>-14.2</TD><TD>15.947</TD><TD>0.085</TD><TD>15.619</TD><TD>0.139</TD><TD>15.404</TD><TD>0.209</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>458-007859</TD><TD>045.5185144</TD><TD>+01.5790314</TD><TD>2012.936</TD><TD>18.002</TD><TD></TD><TD>35.4</TD><TD>-0.2</TD><TD>16.616</TD><TD>0.106</TD><TD>15.751</TD><TD>0.095</TD><TD>15.438</TD><TD>0.147</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>458-007861</TD><TD>045.5296414</TD><TD>+01.5915447</TD><TD>2013.393</TD><TD>14.756</TD><TD>0.010</TD><TD>-14.0</TD><TD>-12.5</TD><TD>13.578</TD><TD>0.030</TD><TD>13.101</TD><TD>0.027</TD><TD>12.978</TD><TD>0.027</TD><TD>16.057</TD><TD>0.060</TD><TD>15.191</TD><TD>0.015</TD><TD>15.566</TD><TD>0.044</TD><TD>14.938</TD><TD>0.039</TD><TD>14.652</TD><TD>0.235</TD></TR>
+<TR><TD>459-007819</TD><TD>045.5647806</TD><TD>+01.6040683</TD><TD>2013.263</TD><TD>14.716</TD><TD>0.023</TD><TD>5.6</TD><TD>-22.2</TD><TD>13.643</TD><TD>0.028</TD><TD>13.256</TD><TD>0.027</TD><TD>13.181</TD><TD>0.027</TD><TD>15.830</TD><TD>0.051</TD><TD>15.080</TD><TD>0.045</TD><TD>15.429</TD><TD>0.033</TD><TD>14.864</TD><TD>0.046</TD><TD>14.590</TD><TD>0.237</TD></TR>
+<TR><TD>459-007810</TD><TD>045.5389664</TD><TD>+01.6022011</TD><TD>2013.427</TD><TD>13.664</TD><TD>0.013</TD><TD>-18.0</TD><TD>-18.6</TD><TD>12.476</TD><TD>0.026</TD><TD>12.044</TD><TD>0.023</TD><TD>11.992</TD><TD>0.023</TD><TD>14.938</TD><TD>0.032</TD><TD>14.078</TD><TD>0.025</TD><TD>14.468</TD><TD>0.026</TD><TD>13.803</TD><TD>0.027</TD><TD>13.547</TD><TD>0.117</TD></TR>
+</TABLEDATA></DATA>
+</TABLE>
+<INFO name="matches" value="10">matching records</INFO>
+
+<INFO name="Warning" value="No center provided++++"/>
+<INFO name="Warning" value="truncated result (maxtup=10)"/><INFO name="QUERY_STATUS" value="OVERFLOW"> value="truncated result (maxtup=10)"</INFO>
+
+</RESOURCE>
+</VOTABLE>

@@ -1,0 +1,25 @@
+{
+  "frames": {
+    "spaceSys": {
+      "dmid": "_spaceframe_ICRS_BARYCENTER"
+    },
+    "timeSys": {}
+  },
+  "mapping": {
+    "longitude": "RAICRS",
+    "latitude": "DEICRS",
+    "obsDate": {
+      "dateTime": "_tab1_8",
+      "representation": "year"
+    },
+    "pmLongitude": "pmRA",
+    "pmLatitude": "pmDE",
+    "errors": {},
+    "correlations": {}
+  },
+  "semantics": {
+    "description": "6 parameters position",
+    "uri": "https://www.ivoa.net/rdf/uat/2024-06-25/uat.html#astronomical-location",
+    "label": "Astronomical location"
+  }
+}

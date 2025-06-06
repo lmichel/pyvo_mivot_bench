@@ -1,0 +1,74 @@
+<VODML xmlns="http://www.ivoa.net/xml/mivot">
+  <REPORT status="OK"/>
+  <MODEL name="ivoa" url="https://www.ivoa.net/xml/VODML/IVOA-v1.vo-dml.xml"/>
+  <MODEL name="mango"
+         url="https://raw.githubusercontent.com/ivoa-std/MANGO/refs/heads/wd-v1.0/vo-dml/mango.vo-dml.xml"/>
+  <MODEL name="Phot" url="https://ivoa.net/xml/VODML/Phot-v1.vodml.xml"/>
+  <GLOBALS>
+    <INSTANCE dmtype="Phot:PhotCal" dmid="_photcal_2MASS_2MASS_J_AB">
+      <ATTRIBUTE dmrole="Phot:PhotCal.identifier" dmtype="ivoa:string" value="2MASS/2MASS.J/AB"/>
+      <INSTANCE dmrole="Phot:PhotCal.zeroPoint" dmtype="Phot:ZeroPoint">
+        <ATTRIBUTE dmrole="Phot:ZeroPoint.type" dmtype="ivoa:integer" value="0"/>
+        <ATTRIBUTE dmrole="Phot:ZeroPoint.referenceMagnitudeValue" dmtype="ivoa:real" value="0"/>
+        <ATTRIBUTE dmrole="Phot:ZeroPoint.referenceMagnitudeError" dmtype="ivoa:real" value="0"/>
+        <!-- ATTRIBUTE dmrole="Phot:ZeroPoint.softeningParameter" dmtype="ivoa:real" value=""/ -->
+        <INSTANCE dmrole="Phot:ZeroPoint.flux" dmtype="Phot:Flux">
+          <ATTRIBUTE dmrole="Phot:Flux.ucd" dmtype="Phot:UCD" value="phot.flux.density"/>
+          <ATTRIBUTE dmrole="Phot:Flux.unitexpression" dmtype="ivoa:Unit" value="Jy"/>
+          <ATTRIBUTE dmrole="Phot:Flux.value" dmtype="ivoa:real" value="3631"/>
+          <ATTRIBUTE dmrole="Phot:Flux.error" dmtype="ivoa:real" value="0"/>
+        </INSTANCE>
+      </INSTANCE>
+      <INSTANCE dmrole="Phot:PhotCal.magnitudeSystem" dmtype="Phot:MagnitudeSystem">
+        <ATTRIBUTE dmrole="Phot:MagnitudeSystem.type" dmtype="Phot:TypeOfMagSystem" value="AB"/>
+      </INSTANCE>
+      <REFERENCE dmrole="Phot:PhotCal.photometryFilter" dmref="_photfilter_2MASS_2MASS_J_AB"/>
+    </INSTANCE>
+    <INSTANCE dmtype="Phot:PhotometryFilter" dmid="_photfilter_2MASS_2MASS_J_AB">
+      <ATTRIBUTE dmrole="Phot:PhotometryFilter.fpsIdentifier" dmtype="ivoa:string" value="ivo://svo/fps"/>
+      <ATTRIBUTE dmrole="Phot:PhotometryFilter.identifier" dmtype="ivoa:string" value="2MASS/2MASS.J"/>
+      <ATTRIBUTE dmrole="Phot:PhotometryFilter.name" dmtype="ivoa:string" value="2MASS.J"/>
+      <ATTRIBUTE dmrole="Phot:PhotometryFilter.description" dmtype="ivoa:string" value="2MASS J"/>
+      <ATTRIBUTE dmrole="Phot:PhotometryFilter.bandName" dmtype="ivoa:string" value="J"/>
+      <INSTANCE dmrole="Phot:PhotometryFilter.bandwidth" dmtype="Phot:Bandwidth">
+        <ATTRIBUTE dmrole="Phot:Bandwidth.ucd" dmtype="Phot:UCD" value="instr.bandwidth"/>
+        <ATTRIBUTE dmrole="Phot:Bandwidth.unitexpression" dmtype="ivoa:Unit" value=""/>
+        <ATTRIBUTE dmrole="Phot:Bandwidth.extent" dmtype="ivoa:real" value="1624.3190191027"/>
+        <ATTRIBUTE dmrole="Phot:Bandwidth.start" dmtype="ivoa:real" value="10806.470589792"/>
+        <ATTRIBUTE dmrole="Phot:Bandwidth.stop" dmtype="ivoa:real" value="10806.470589792"/>
+      </INSTANCE>
+      <INSTANCE dmrole="Phot:PhotometryFilter.transmissionCurve" dmtype="Phot:TransmissionCurve">
+        <INSTANCE dmrole="Phot:TransmissionCurve.access" dmtype="Phot:Access">
+          <ATTRIBUTE dmrole="Phot:Access.reference" dmtype="ivoa:anyURI" value="http://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=2MASS/2MASS.J"/>
+          <ATTRIBUTE dmrole="Phot:Access.size" dmtype="ivoa:integer" value="2"/>
+          <ATTRIBUTE dmrole="Phot:Access.format" dmtype="ivoa:string" value="application/x-votable+xml"/>
+        </INSTANCE>
+      </INSTANCE>
+      <INSTANCE dmrole="Phot:PhotometryFilter.spectralLocation" dmtype="Phot:SpectralLocation">
+        <ATTRIBUTE dmrole="Phot:SpectralLocation.ucd" dmtype="Phot:UCD" value="em.wl;meta.main"/>
+        <ATTRIBUTE dmrole="Phot:SpectralLocation.unitexpression" dmtype="ivoa:Unit" value="Angstrom"/>
+        <ATTRIBUTE dmrole="Phot:SpectralLocation.value" dmtype="ivoa:real" value="12350"/>
+      </INSTANCE>
+    </INSTANCE>
+  </GLOBALS>
+  <TEMPLATES>
+    <INSTANCE dmtype="mango:MangoObject" dmid="URAT1">
+      <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:MangoObject.identifier" ref="URAT1"/>
+      <COLLECTION dmrole="mango:MangoObject.propertyDock">
+        <INSTANCE dmtype="mango:Brightness">
+          <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:Property.description" value="magnitude J"/>
+          <INSTANCE dmtype="mango:VocabularyTerm" dmrole="mango:Property.semantics">
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.uri" 
+                       value="https://www.ivoa.net/rdf/uat/2024-06-25/uat.html#magnitude"/>
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.label" value="magnitude"/>
+          </INSTANCE>
+          <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:PhotometricProperty.value" unit="mag" ref="Jmag"/>
+          <INSTANCE dmtype="mango:error.PErrorSym1D" dmrole="mango:PhotometricProperty.error">
+            <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:error.PErrorSym1D.sigma" unit="mag" ref="e_Jmag"/>
+          </INSTANCE>
+          <REFERENCE dmrole="mango:Brightness.photCal" dmref="_photcal_2MASS_2MASS_J_AB"/>
+        </INSTANCE>
+      </COLLECTION>
+    </INSTANCE>
+  </TEMPLATES>
+</VODML>
