@@ -1,0 +1,110 @@
+<VODML>
+  <REPORT status="OK">
+  </REPORT>
+  <MODEL name="ivoa" url="https://www.ivoa.net/xml/VODML/IVOA-v1.vo-dml.xml">
+  </MODEL>
+  <MODEL name="coords" url="https://ivoa.net/xml/VODML/Coords-v1.vo-dml.xml">
+  </MODEL>
+  <MODEL name="mango" url="https://raw.githubusercontent.com/ivoa-std/MANGO/refs/heads/wd-v1.0/vo-dml/mango.vo-dml.xml">
+  </MODEL>
+  <GLOBALS>
+    <INSTANCE dmtype="coords:SpaceSys" dmid="_spaceframe_ICRS_2000_BARYCENTER">
+      <INSTANCE dmtype="coords:SpaceFrame" dmrole="coords:PhysicalCoordSys.frame">
+        <ATTRIBUTE dmtype="ivoa:string" dmrole="coords:SpaceFrame.spaceRefFrame" value="ICRS">
+        </ATTRIBUTE>
+      </INSTANCE>
+    </INSTANCE>
+  </GLOBALS>
+  <TEMPLATES>
+    <INSTANCE dmtype="mango:MangoObject" dmid="main_id">
+      <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:MangoObject.identifier" ref="main_id">
+      </ATTRIBUTE>
+      <COLLECTION dmrole="mango:MangoObject.propertyDock">
+        <INSTANCE dmtype="mango:EpochPosition">
+          <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:Property.description" value="6 parameters position">
+          </ATTRIBUTE>
+          <INSTANCE dmtype="mango:VocabularyTerm" dmrole="mango:Property.semantics">
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.uri" value="https://www.ivoa.net/rdf/uat/2024-06-25/uat.html#astronomical-location">
+            </ATTRIBUTE>
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.label" value="Astronomical location">
+            </ATTRIBUTE>
+          </INSTANCE>
+          <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:EpochPosition.longitude" unit="deg" ref="ra">
+          </ATTRIBUTE>
+          <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:EpochPosition.latitude" unit="deg" ref="dec">
+          </ATTRIBUTE>
+          <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:EpochPosition.pmLongitude" unit="mas / yr" ref="pmra">
+          </ATTRIBUTE>
+          <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:EpochPosition.pmLatitude" unit="mas / yr" ref="pmdec">
+          </ATTRIBUTE>
+          <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:EpochPosition.parallax" unit="mas" ref="plx_value">
+          </ATTRIBUTE>
+          <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:EpochPosition.radialVelocity" unit="km / s" ref="rvz_radvel">
+          </ATTRIBUTE>
+          <INSTANCE dmrole="mango:EpochPosition.obsDate" dmtype="mango:DateTime">
+            <ATTRIBUTE dmrole="mango:DateTime.representation" dmtype="ivoa:string" value="year">
+            </ATTRIBUTE>
+            <ATTRIBUTE dmrole="mango:DateTime.dateTime" dmtype="ivoa:datetime" value="2000" unit="y">
+            </ATTRIBUTE>
+          </INSTANCE>
+          <INSTANCE dmtype="mango:EpochPositionErrors" dmrole="mango:EpochPosition.errors">
+            <INSTANCE dmtype="mango:error.PErrorEllipse" dmrole="mango:EpochPositionErrors.position">
+              <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:error.PErrorEllipse.semiMajorAxis" unit="mas" ref="coo_err_maja">
+              </ATTRIBUTE>
+              <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:error.PErrorEllipse.semiMinorAxis" unit="mas" ref="coo_err_mina">
+              </ATTRIBUTE>
+              <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:error.PErrorEllipse.angle" unit="deg" ref="coo_err_angle">
+              </ATTRIBUTE>
+            </INSTANCE>
+            <INSTANCE dmtype="mango:error.PErrorEllipse" dmrole="mango:EpochPositionErrors.properMotion">
+              <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:error.PErrorEllipse.semiMajorAxis" unit="mas / yr" ref="pm_err_maja">
+              </ATTRIBUTE>
+              <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:error.PErrorEllipse.semiMinorAxis" unit="mas / yr" ref="pm_err_mina">
+              </ATTRIBUTE>
+              <ATTRIBUTE dmtype="ivoa:RealQuantity" dmrole="mango:error.PErrorEllipse.angle" unit="deg" ref="pm_err_angle">
+              </ATTRIBUTE>
+            </INSTANCE>
+          </INSTANCE>
+          <REFERENCE_1 dmrole="mango:EpochPosition.spaceSys" dmref="_spaceframe_ICRS_2000_BARYCENTER">
+          </REFERENCE_1>
+        </INSTANCE>
+        <INSTANCE dmtype="mango:Label">
+          <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:Property.description" value="Objet type">
+          </ATTRIBUTE>
+          <INSTANCE dmtype="mango:VocabularyTerm" dmrole="mango:Property.semantics">
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.uri" value="https://www.ivoa.net/rdf/uat/2024-06-25/uat.html#classification">
+            </ATTRIBUTE>
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.label" value="Grouping of astronomical objects into categories on the basis of physical, morphological, or evolutionary characteristics.">
+            </ATTRIBUTE>
+          </INSTANCE>
+          <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:Label.text" ref="otype">
+          </ATTRIBUTE>
+        </INSTANCE>
+        <INSTANCE dmtype="mango:Label">
+          <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:Property.description" value="MK spectral type">
+          </ATTRIBUTE>
+          <INSTANCE dmtype="mango:VocabularyTerm" dmrole="mango:Property.semantics">
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.uri" value="https://www.ivoa.net/rdf/uat/2024-06-25/uat.html#classification-systems">
+            </ATTRIBUTE>
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.label" value="Systems for the grouping of astronomical objects into categories on the basis of physical characteristics.">
+            </ATTRIBUTE>
+          </INSTANCE>
+          <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:Label.text" ref="sp_type">
+          </ATTRIBUTE>
+        </INSTANCE>
+        <INSTANCE dmtype="mango:Label">
+          <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:Property.description" value="Morphological type">
+          </ATTRIBUTE>
+          <INSTANCE dmtype="mango:VocabularyTerm" dmrole="mango:Property.semantics">
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.uri" value="https://www.ivoa.net/rdf/uat/2024-06-25/uat.html#classification-systems">
+            </ATTRIBUTE>
+            <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:VocabularyTerm.label" value="Systems for the grouping of astronomical objects into categories on the basis of morphological characteristics.">
+            </ATTRIBUTE>
+          </INSTANCE>
+          <ATTRIBUTE dmtype="ivoa:string" dmrole="mango:Label.text" ref="morph_type">
+          </ATTRIBUTE>
+        </INSTANCE>
+      </COLLECTION>
+    </INSTANCE>
+  </TEMPLATES>
+</VODML>
