@@ -5,6 +5,7 @@ import os
 import pytest
 from pyvo.mivot.utils.dict_utils import DictUtils
 pytestmark = pytest.mark.skipif(True)
+from __init__ import *
 import astropy.units as u
 import numpy as np
 from astropy.time import Time
@@ -22,9 +23,7 @@ activate_features("MIVOT")
 
 @pytest.mark.skip(reason="no way of currently testing this")
 def run():
-    votable_path = os.path.realpath(
-        os.path.join(__file__, "..", "data", "vizier_votable.xml")
-    )
+    votable_path = get_raw_data_folder("vizier_votable.xml")
 
     votable = parse(votable_path)
     
@@ -54,12 +53,12 @@ def run():
     m_viewer = MivotViewer(votable, resolve_ref=True)
     mivot_instance = m_viewer.dm_instance
     # iterate over all rows
-    while m_viewer.next():
+    while m_viewer.next_row_view():
         if mivot_instance.dmtype == "mango:MangoObject":
             for mango_property in mivot_instance.propertyDock:
                 if mango_property.dmtype == "mango:EpochPosition":
                     # get a SkyCoord from MIVOT annotations
-                    scb = SkyCoordBuilder(mango_property.to_dict())
+                    scb = SkyCoordBuilder(mango_property)
                     sky_coord = scb.build_sky_coord()
                     # Store the parameter to plot
                     dates.append(f"{mivot_instance.identifier.value}"

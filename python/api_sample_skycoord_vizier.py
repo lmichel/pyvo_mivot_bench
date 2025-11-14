@@ -19,7 +19,7 @@ activate_features("MIVOT")
 @pytest.mark.skip(reason="no way of currently testing this")
 def run():
 
-    scs_srv = SCSService(" https://vizier.cds.unistra.fr/viz-bin/conesearch/V1.5/I/239/hip_main")
+    scs_srv = SCSService("https://vizier.cds.unistra.fr/viz-bin/conesearch/V1.5/I/239/hip_main")
 
     query_result = scs_srv.search(
         pos=SkyCoord(ra=52.26708 * u.degree, dec=59.94027 * u.degree, frame='icrs'),
@@ -30,10 +30,10 @@ def run():
 
     mivot_instance = m_viewer.dm_instance
     DictUtils.print_pretty_json(mivot_instance.to_dict())
-    while m_viewer.next():
+    while m_viewer.next_row_view():
         print(mivot_instance.dmtype)
         if mivot_instance.dmtype == "mango:EpochPosition":
-            scb = SkyCoordBuilder(mivot_instance.to_dict())
+            scb = SkyCoordBuilder(mivot_instance)
             print(scb.build_sky_coord())
 
 
