@@ -4,6 +4,7 @@
 import os
 import pytest
 pytestmark = pytest.mark.skipif(True)
+from __init__ import *
 import astropy.units as u
 import numpy as np
 from astropy.time import Time
@@ -21,9 +22,8 @@ activate_features("MIVOT")
 
 @pytest.mark.skip(reason="no way of currently testing this")
 def run():
-    votable_path = os.path.realpath(
-        os.path.join(__file__, "..", "data", "vizier_votable.xml")
-    )
+
+    votable_path = get_raw_data_folder("vizier_votable.xml")
 
     votable = parse(votable_path)
     builder = InstancesFromModels(votable, dmid="URAT1")
@@ -47,7 +47,7 @@ def run():
     
     m_viewer = MivotViewer(votable, resolve_ref=True)
     mivot_instance = m_viewer.dm_instance
-    while m_viewer.next():
+    while m_viewer.next_row_view():
         if mivot_instance.dmtype == "mango:MangoObject":
             print(f"Read source {mivot_instance.identifier.value}")
             for mango_property in mivot_instance.propertyDock:

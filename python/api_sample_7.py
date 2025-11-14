@@ -38,7 +38,7 @@ mivot_instance = m_viewer.dm_instance
 while m_viewer.next_row_view():
 
     if mivot_instance.dmtype == "mango:EpochPosition":
-        scb = SkyCoordBuilder(mivot_instance.to_dict())
+        scb = SkyCoordBuilder(mivot_instance)
         sky_coord = scb.build_sky_coord()
         print(sky_coord)
 

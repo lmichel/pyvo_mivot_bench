@@ -19,41 +19,45 @@ activate_features("MIVOT")
 @pytest.mark.skip(reason="no way of currently testing this")
 def run():
     
-    service = TAPService('https://xcatdb.unistra.fr/xtapdb')
+    # run a regular TAP query against  XtapDB
+    URL = "https://xcatdb.unistra.fr/xtapdb"
+    FORMAT = "application/x-votable+xml;content=mivot"
+    QUERY = 'SELECT TOP 5 * FROM "public".mergedentry'
+    
+    service = TAPService(URL)
     result = service.run_sync(
-        """
-        SELECT TOP 5 * FROM "public".mergedentry 
-        """,
-        format="application/x-votable+xml;content=mivot")
+        QUERY,
+        format=FORMAT)
 
+    # Give the query result to the MIVOt viewer which
+    # generates the model view of the data
     m_viewer = MivotViewer(result, resolve_ref=True)
     
-    XmlUtils.pretty_print(m_viewer._mapping_block)
-    mivot_instance = m_viewer.dm_instance
-    # DictUtils.print_pretty_json(mivot_instance.to_dict())
-    while m_viewer.next():
+    while m_viewer.next_row_view():
+        # get the Python object (MangoObject)representing the current row
+        mivot_instance = m_viewer.dm_instance
         sp_location = []
         sp_filter = []
         mag = []
         mag_error = []
         if mivot_instance.dmtype == "mango:MangoObject":
-            print(f"Read source {mivot_instance.identifier.value} {mivot_instance.dmtype}")
             for mango_property in mivot_instance.propertyDock:
                 if  mango_property.dmtype == "mango:Brightness":
                     if mango_property.value.value:
-                        mag.append(mango_property.value.value)
-                        print(mango_property)
+                        # get the flux value, error and unit
                         unit = mango_property.value.unit
-                        print(unit)
+                        mag.append(mango_property.value.value)
                         mag_error.append(mango_property.error.sigma.value)
                         phot_cal = mango_property.photCal
+                        # get the filter spectral location (filter name + location)
                         spectral_location = phot_cal.photometryFilter.spectralLocation
                         sp_location.append(
                             spectral_location.value.value)
                         sp_filter.append(phot_cal.identifier.value)
-                        sunit = spectral_location.unitexpression.value
+                        sp_unit = spectral_location.unitexpression.value
                     
-            plot_sed(mivot_instance.identifier.value, unit, sunit, mag, mag_error, sp_filter, sp_location)  
+            plot_sed(mivot_instance.identifier.value, unit, sp_unit, mag, mag_error,
+                     sp_filter, sp_location)  
                          
 def plot_sed(identifier, unit, sunit, mag, mag_error, sp_filter, sp_location):          
     import matplotlib.pyplot as plt

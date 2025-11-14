@@ -1,4 +1,4 @@
-## Conda MacOS and matplotlib
+## Conda MacOS and matplotlib (work in progress)
 
 ```
 conda activate pyvo
