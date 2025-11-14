@@ -1,0 +1,4 @@
+astropy
+pyvo>=1.8
+matplotlib
+mplcursors

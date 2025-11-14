@@ -4,17 +4,14 @@
 import os
 import pytest
 pytestmark = pytest.mark.skipif(True)
-from __init__ import *
-import astropy.units as u
-import numpy as np
-from astropy.time import Time
+from __init__ import get_raw_data_folder
+
 from astropy.io.votable import parse
 from pyvo.utils import activate_features
 from pyvo.mivot.utils.xml_utils import XmlUtils
 # from pyvo.mivot.utils.dict_utils import DictUtils
 from pyvo.mivot.writer.instances_from_models import InstancesFromModels
 from pyvo.mivot.viewer.mivot_viewer import MivotViewer
-from pyvo.mivot.features.sky_coord_builder import SkyCoordBuilder
 
 
 # Enable MIVOT-specific features in the pyvo library
@@ -46,17 +43,21 @@ def run():
     
     
     m_viewer = MivotViewer(votable, resolve_ref=True)
-    mivot_instance = m_viewer.dm_instance
     while m_viewer.next_row_view():
+        mivot_instance = m_viewer.dm_instance
         if mivot_instance.dmtype == "mango:MangoObject":
             print(f"Read source {mivot_instance.identifier.value}")
             for mango_property in mivot_instance.propertyDock:
                 if  mango_property.dmtype == "mango:Brightness":
+                    # get magnitude value and error
                     mag_value = mango_property.value.value
                     mag_error = mango_property.error.sigma.value
-                    mag_wl = mango_property.photCal.photometryFilter.spectralLocation.value.value
-                    mag_filter = mango_property.photCal.identifier.value
-                    print(f"magnitude at {mag_wl} Angstrom (filter {mag_filter}) is {mag_value:.2f} +/- {mag_error:.2f}")
+                    # get photometric calibration info
+                    phot_cal = mango_property.photCal
+                    mag_wl = phot_cal.photometryFilter.spectralLocation.value.value
+                    mag_filter = phot_cal.identifier.value
+                    print(f"magnitude at {mag_wl} Angstrom (filter "
+                          f"{mag_filter}) is {mag_value:.2f} +/- {mag_error:.2f}")
         break
                     
 
