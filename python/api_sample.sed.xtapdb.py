@@ -1,16 +1,12 @@
 """
 """
 
-import os
 import pytest
 pytestmark = pytest.mark.skipif(True)
 from pyvo.utils import activate_features
 from pyvo.dal import TAPService
-from pyvo.mivot.utils.xml_utils import XmlUtils
 # from pyvo.mivot.utils.dict_utils import DictUtils
-from pyvo.mivot.writer.instances_from_models import InstancesFromModels
 from pyvo.mivot.viewer.mivot_viewer import MivotViewer
-from pyvo.mivot.features.sky_coord_builder import SkyCoordBuilder
 
 
 # Enable MIVOT-specific features in the pyvo library
