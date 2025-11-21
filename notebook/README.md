@@ -10,3 +10,4 @@ pip install -U ipympl
 python -m ipykernel install --user --name mango --display-name "pyvo 1.8 (mango)"
 python -m jupyterlab
 ```
+and select the appropriate kernel....
